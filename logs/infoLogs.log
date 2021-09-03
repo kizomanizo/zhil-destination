@@ -1,3 +1,8 @@
 {"message":"Wed Sep 01 2021 14:46:04 GMT+0300 (East Africa Time)- Error ( 401): Auth token is not supplied.","level":"error"}
 {"message":"Wed Sep 01 2021 14:47:57 GMT+0300 (East Africa Time)- Error ( 401): Auth token is not supplied.","level":"error"}
 {"message":"Wed Sep 01 2021 14:52:33 GMT+0300 (East Africa Time)- Error ( 401): Auth token is not supplied.","level":"error"}
+{"message":"Wed Sep 01 2021 16:15:23 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Wed Sep 01 2021 16:15:35 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.","level":"error"}
+{"message":"Wed Sep 01 2021 16:15:44 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.","level":"error"}
+{"message":"Fri Sep 03 2021 12:03:23 GMT+0300 (East Africa Time)- Error ( undefined): connect ECONNREFUSED 127.0.0.1:3306","level":"error"}
+{"message":"Fri Sep 03 2021 12:04:35 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.","level":"error"}
