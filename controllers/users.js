@@ -1,8 +1,8 @@
 
 // @Author Kizito Mrema
 // @Usage ApiHelper function accepts res object, title string , remark string and a message array
-const userService = require('../services/userService');
-const apiHelper = require('../helpers/apiHelper');
+const userService = require('../services/users');
+const apiHelper = require('../helpers/api');
 
 async function list(_req, res, next) {
     try { apiHelper.apiResponse(res, 200, "Search", "All Users", await userService.list()) }

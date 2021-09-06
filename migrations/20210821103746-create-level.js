@@ -2,7 +2,7 @@
 
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        await queryInterface.createTable('Levels', {
+        await queryInterface.createTable('levels', {
             id: {
                 allowNull: false,
                 primaryKey: true,
@@ -27,23 +27,23 @@ module.exports = {
                 required: false,
                 defaultValue: true
             },
-            createdby: {
+            created_by: {
                 type: Sequelize.UUID,
                 required: true
             },
-            updatedby: {
+            updated_by: {
                 type: Sequelize.UUID,
             },
-            createdAt: {
+            created_at: {
                 allowNull: false,
                 type: Sequelize.DATE
             },
-            updatedAt: {
+            updated_at: {
                 type: Sequelize.DATE
             }
         })
     },
     down: async (queryInterface, Sequelize) => {
-        await queryInterface.dropTable('Levels')
+        await queryInterface.dropTable('levels')
     }
 }

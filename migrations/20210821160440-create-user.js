@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        await queryInterface.createTable('Users', {
+        await queryInterface.createTable('users', {
             id: {
                 allowNull: false,
                 primaryKey: true,
@@ -23,19 +23,19 @@ module.exports = {
                 required: [true, "Password is required"],
                 allowNull: false
             },
-            saltRounds: {
+            salt_rounds: {
                 type: Sequelize.INTEGER,
                 required: true
             },
-            joinDate: {
+            join_date: {
                 type: Sequelize.DATE,
                 required: true
             },
-            lastLogin: {
+            last_login: {
                 type: Sequelize.DATE,
                 required: true
             },
-            tokenExpiry: {
+            token_expiry: {
                 type: Sequelize.DATE,
                 required: false
             },
@@ -44,31 +44,31 @@ module.exports = {
                 required: false,
                 defaultValue: true
             },
-            levelId: {
+            level_id: {
                 type: Sequelize.UUID,
                 allowNull: false,
                 references: {
-                  model: 'Levels',
+                  model: 'levels',
                   key: 'id'
-              }
+                }
             },
-            createdBy: {
+            created_by: {
                 type: Sequelize.UUID,
                 required: true
             },
-            updatedBy: {
+            updated_by: {
                 type: Sequelize.UUID,
             },
-            createdAt: {
+            created_at: {
                 allowNull: false,
                 type: Sequelize.DATE
             },
-            updatedAt: {
+            updated_at: {
                 type: Sequelize.DATE
             }
         })
     },
     down: async (queryInterface, Sequelize) => {
-        await queryInterface.dropTable('Users')
+        await queryInterface.dropTable('users')
     }
 }

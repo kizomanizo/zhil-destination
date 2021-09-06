@@ -17,6 +17,7 @@ async function handleError (err, res, next) {
         type: "Error"+' '+err.statusCode,
         title: "Error thrown!",
         message: err.message,
+        stack: err.stack,
     })
 };
 

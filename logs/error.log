@@ -1,0 +1,18 @@
+{"message":"Mon Sep 06 2021 22:44:11 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Mon Sep 06 2021 22:44:15 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdBy' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 22:45:11 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdBy' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 22:45:14 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdBy' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 22:49:03 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdBy' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 22:49:45 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdBy' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 22:50:11 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdBy' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 22:52:38 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdAt' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 22:53:36 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'level_id' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:00:12 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'salt_rounds' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:02:34 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'token_xpiry' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:03:04 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdAt' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:06:40 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdAt' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:07:00 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdAt' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:11:24 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdAt' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:13:46 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdAt' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:16:34 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'updatedAt' in 'field list'","level":"error"}
+{"message":"Mon Sep 06 2021 23:18:35 GMT+0300 (East Africa Time)- Error ( undefined): logsHelper is not defined","level":"error"}

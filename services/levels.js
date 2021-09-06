@@ -1,5 +1,5 @@
-const Level = require('../models').levelModel
-const { ErrorHandler } = require("../helpers/errorHelper")
+const Level = require('../models').level
+const { ErrorHandler } = require("../helpers/error")
 
 async function list() {
     const allLevels = await Level.findAll({})
@@ -13,8 +13,8 @@ async function create(req, _res) {
         newLevel.description = req.body.description
         newLevel.access = req.body.access
         newLevel.status = true
-        newLevel.createdBy = req.decoded.id
-        newLevel.updatedBy = null
+        newLevel.created_by = req.decoded.id
+        newLevel.updated_by = null
     return newLevel.save()
 };
 
@@ -33,8 +33,8 @@ async function update(req, id) {
         if ( req.body.access != null ) { updatedLevel.access = req.body.access }
         if ( req.body.rights != null ) { updatedLevel.rights = req.body.rights }
         if ( req.body.status != null ) { updatedLevel.status = req.body.status }
-        updatedLevel.updatedBy = req.decoded.id
-        updatedLevel.updatedAt = Date()
+        updatedLevel.updated_by = req.decoded.id
+        updatedLevel.updated_at = Date()
         await updatedLevel.save()
         return updatedLevel
     }   

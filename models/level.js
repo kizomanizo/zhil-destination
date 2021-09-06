@@ -1,23 +1,24 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-    class levelModel extends Model {
+    class level extends Model {
         static associate(models) {
-            levelModel.hasMany(models.userModel, { as: 'Users', foreignKey: 'levelId' })
+            level.hasMany(models.user, { as: 'users', foreignKey: 'level_id', onDelete: 'RESTRICT', hooks: true })
         }
     }
-    levelModel.init({
+    level.init({
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
         name: DataTypes.STRING,
         description: DataTypes.STRING,
         access: DataTypes.STRING,
         status: DataTypes.BOOLEAN,
-        createdBy: DataTypes.STRING,
-        updatedBy: DataTypes.STRING,
+        created_by: DataTypes.STRING,
+        updated_by: DataTypes.STRING,
     }, {
         sequelize,
-        modelName: 'levelModel',
-        tableName: 'Levels'
+        modelName: 'level',
+        createdAt: 'created_at',
+        updatedAt: 'updated_at'
     })
-    return levelModel
+    return level
 }

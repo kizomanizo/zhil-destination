@@ -1,8 +1,8 @@
 
 // @Author Kizito Mrema
 // @Usage ApiHelper function accepts res object, string type, string title and a message array
-const levelService = require('../services/levelService')
-const apiHelper = require('../helpers/apiHelper')
+const levelService = require('../services/levels')
+const apiHelper = require('../helpers/api')
 
 async function list(_req, res, next) {
     try { apiHelper.apiResponse(res, 200, 'Search', 'Levels found!', await levelService.list()) }

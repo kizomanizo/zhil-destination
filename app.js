@@ -3,12 +3,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 const winston = require('winston');
 
-var usersRouter = require('./routes/usersRouter');
-var levelsRouter = require('./routes/levelsRouter');
+var usersRouter = require('./routes/users');
+var levelsRouter = require('./routes/levels');
 const cors = require('cors');
-const { handleError } = require('./helpers/errorHelper');
-winston.add(new winston.transports.File({ filename: 'logs/errorLogs.log', level: 'error' }),);
-winston.add(new winston.transports.File({ filename: 'logs/infoLogs.log', level: 'info' }),);
+const { handleError } = require('./helpers/error');
+winston.add(new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),);
+winston.add(new winston.transports.File({ filename: 'logs/info.log', level: 'info' }),);
 
 var app = express();
 

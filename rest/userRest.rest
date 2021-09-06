@@ -22,7 +22,7 @@ Authorization: {{authToken}}
     "username": "{{int}}Member",
     "password": "{{int}}",
     "email": "{{int}}@example.com",
-    "levelId": "{{levels.response.body.message[0].id}}",
+    "level_id": "{{levels.response.body.message[0].id}}",
     "status": true
 }
 
@@ -65,5 +65,5 @@ Content-Type: application/json
 
 {
     "username": "admin",
-    "password": "admin"
+    "password": "P@55w0rd"
 }

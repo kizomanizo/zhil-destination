@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        await queryInterface.createTable('People', {
+        await queryInterface.createTable('people', {
             id: {
                 allowNull: false,
                 primaryKey: true,
@@ -24,31 +24,31 @@ module.exports = {
                 type: Sequelize.STRING,
                 required: [true, "Organization is required"]
             },
-            userId: {
+            user_id: {
                   type: Sequelize.UUID,
                   allowNull: false,
                   references: {
-                  model: 'Users',
+                  model: 'users',
                   key: 'id'
               }
             },
-            createdBy: {
+            created_by: {
                 type: Sequelize.UUID,
                 required: true
             },
-            updatedBy: {
+            updated_by: {
                 type: Sequelize.UUID,
             },
-            createdAt: {
+            created_at: {
                 allowNull: false,
                 type: Sequelize.DATE
             },
-            updatedAt: {
+            updated_at: {
                 type: Sequelize.DATE
             }
         })
     },
     down: async (queryInterface, Sequelize) => {
-        await queryInterface.dropTable('People')
+        await queryInterface.dropTable('people')
     }
 }
