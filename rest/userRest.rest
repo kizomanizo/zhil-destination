@@ -64,11 +64,6 @@ POST http://localhost:4001/api/v1/users/login HTTP/1.1
 Content-Type: application/json
 
 {
-<<<<<<< HEAD
     "username": "admin",
-    "password": "P@55w0rd"
-=======
-    "username": "Admin",
-    "password": "Admin"
->>>>>>> a1be5cd7064d4b8a0eee52bb26f6f71b8831ec23
+    "password": "{{$dotenv DEMO_PASSWORD}}"
 }

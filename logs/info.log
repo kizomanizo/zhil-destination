@@ -16,3 +16,11 @@
 {"message":"Mon Sep 06 2021 23:13:46 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'createdAt' in 'field list'","level":"error"}
 {"message":"Mon Sep 06 2021 23:16:34 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'updatedAt' in 'field list'","level":"error"}
 {"message":"Mon Sep 06 2021 23:18:35 GMT+0300 (East Africa Time)- Error ( undefined): logsHelper is not defined","level":"error"}
+{"message":"Mon Sep 06 2021 23:29:07 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 44","level":"error"}
+{"message":"Mon Sep 06 2021 23:29:22 GMT+0300 (East Africa Time)- Error ( 400): Match false","level":"error"}
+{"message":"Mon Sep 06 2021 23:30:23 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 44","level":"error"}
+{"message":"Mon Sep 06 2021 23:30:54 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 44","level":"error"}
+{"message":"Mon Sep 06 2021 23:34:13 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token P in JSON at position 43","level":"error"}
+{"message":"Mon Sep 06 2021 23:34:14 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token P in JSON at position 43","level":"error"}
+{"message":"Mon Sep 06 2021 23:34:25 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token P in JSON at position 43","level":"error"}
+{"message":"Mon Sep 06 2021 23:34:39 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token { in JSON at position 44","level":"error"}
