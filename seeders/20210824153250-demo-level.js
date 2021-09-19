@@ -1,20 +1,11 @@
 'use strict'
 
 const { v4: uuidv4 } = require('uuid')
-const dotenv = require('dotenv').config()
+const dotenv = require('dotenv')
+dotenv.config()
 
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        /**
-         * Add seed commands here.
-         *
-         * Example:
-         * await queryInterface.bulkInsert('People', [{
-         *   name: 'John Doe',
-         *   isBetaMember: false
-         * }], {})
-        */
-
         await queryInterface.bulkInsert('levels', [{
             id: uuidv4(),
             name: process.env.LEVEL_ONE_NAME,
@@ -43,12 +34,6 @@ module.exports = {
     },
 
     down: async (queryInterface, Sequelize) => {
-        /**
-         * Add commands to revert seed here.
-         *
-         * Example:
-         * await queryInterface.bulkDelete('People', null, {})
-         */
          await queryInterface.bulkDelete('levels', null, {})
     }
 }

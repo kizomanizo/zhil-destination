@@ -1,4 +1,4 @@
-const Level = require('../models').level
+const Level = require('../models').Level
 const { ErrorHandler } = require("../helpers/error")
 
 async function list() {

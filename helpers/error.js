@@ -3,8 +3,8 @@ class ErrorHandler extends Error {
         super();
         this.statusCode = statusCode;
         this.message = message;
-    };
-};
+    }
+}
 
 async function errorLogger(err) {
     const log = require('winston');
@@ -19,10 +19,10 @@ async function handleError (err, res, next) {
         message: err.message,
         // stack: err.stack,
     })
-};
+}
 
 module.exports = {
     ErrorHandler,
     handleError,
     errorLogger,
-};
+}

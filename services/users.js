@@ -1,21 +1,21 @@
-const User = require('../models').user
-const Level = require('../models').level
-const Person = require('../models').person
+const User = require('../models').User
+const Level = require('../models').Level
+const Person = require('../models').Person
 const { ErrorHandler } = require("../helpers/error")
 const bcrypt = require('bcrypt')
 const dotenv = require('dotenv')
 const auth = require('../middlewares/auth')
+const logsHelper = require('../helpers/logger')
 dotenv.config()
 
 async function hasher(password) {
     const saltRounds = parseInt(process.env.SALT_ROUNDS)
     const salt = bcrypt.genSaltSync(saltRounds)
-    const hash = bcrypt.hashSync(password, salt)
-    return hash
+    return bcrypt.hashSync(password, salt)
 }
 
 async function list() {
-    const users = await User.findAll({attributes: ['id', 'username', 'email', 'status', 'join_date']})
+    const users = await User.findAll({attributes: ['id', 'username', 'email', 'status', 'join_date'], include: 'person'})
     if (!users.length) { throw new ErrorHandler (404, 'Huh No records found.') }
     return users
 }
@@ -33,51 +33,46 @@ async function create(req, _res) {
         level_id: req.body.level_id,
         created_by: req.decoded.id,
         updated_by: null,
-    })
-    const newUser = await user.save()
+        person: [{
+            firstname: req.body.firstname,
+            lastname: req.body.lastname,
+            mobilephone: req.body.mobilephone,
+            organization: req.body.organization,
+            created_by: req.decoded.id,
+            updated_by: null,
+        }]
+    }, {include: ['person']})
+    const newUser = await user.save({ include: ['person'] })
         // Covering private parts...
         delete user.dataValues.salt_rounds
         delete user.dataValues.password
         delete user.dataValues.token_expiry    
-
-    const person = new Person({
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        mobilephone: req.body.mobilephone,
-        organization: req.body.organization,
-        user_id: user.dataValues.id,
-        created_by: req.decoded.id,
-        updated_by: null,
-    })
-    const newPerson = await person.save()
-    return user
+    return newUser
 }
 
 async function find (id) {
-    const foundUser = await User.findOne({where:{id: id}, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_dxpiry']})
+    const foundUser = await User.findOne({where:{id: id}, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_expiry'], include: 'person'})
     if (!foundUser) { throw new ErrorHandler(404, 'A\'ight, User not Found!.') }
     else{ return foundUser }
 }
 
 async function update (req, id) {
     // first update the user object
-    const updatedUser = await User.findOne({where:{id: req.params.id}})
-    if(!updatedUser) { throw new ErrorHandler(404, 'User not updated') }
+    const updatedUser = await User.findOne({where:{id: req.params.id}, include: ['person'] })
+    if(!updatedUser) { throw new ErrorHandler(404, 'Hmm! User not found.') }
     else {
         if  (req.body.username != null ) { updatedUser.username = req.body.username }
         if ( req.body.email != null ) { updatedUser.email = req.body.email }
         if ( req.body.status != null ) { updatedUser.status = req.body.status }
         if ( req.body.level_id != null ) { updatedUser.level_id = req.body.level_id }
-        if ( req.body.password != null ) {
-            updatedUser.password = hasher(req.body.password)
-            updatedUser.salt_rounds = parseInt(process.env.salt_rounds)
-        }
+        if ( req.body.password != null ) { updatedUser.password = hasher(req.body.password)
+        updatedUser.salt_rounds = parseInt(process.env.salt_rounds) }
         updatedUser.updated_by = req.decoded.id
         updatedUser.updated_at = Date()
         await updatedUser.save()
 
         // Then upate the person object
-        const updatedPerson = await Person.findOne({where: {userId: req.params.id}})
+        const updatedPerson = await Person.findOne({where: {user_id: req.params.id}})
         if (req.body.firstname != null) { updatedPerson.firstname = req.body.firstname }
         if (req.body.lastname != null) { updatedPerson.lastname = req.body.lastname }
         if (req.body.mobilephone != null) { updatedPerson.mobilephone = req.body.mobilephone }
@@ -87,8 +82,9 @@ async function update (req, id) {
         await updatedPerson.save()
             delete updatedUser.dataValues.salt_rounds
             delete updatedUser.dataValues.password
-            delete updatedUser.dataValues.token_expiry        
-        return updatedUser
+            delete updatedUser.dataValues.token_expiry
+        logsHelper.infoLogger(updatedUser.id, 'has been updated')   
+        return await User.findOne({where:{id: req.params.id}, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_expiry'], include: ['person'] })
     }   
 }
 
@@ -103,7 +99,7 @@ async function remove(id) {
 }
 
 async function login(req) {
-    return await auth.login(req)
+    return auth.login(req)
 }
 
 module.exports = { list, create, find, update, remove, login, }

@@ -1,24 +1,23 @@
-'use strict'
+'use strict';
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-    class level extends Model {
+    class Goal extends Model {
         static associate(models) {
-            level.hasMany(models.user, { as: 'users', foreignKey: 'level_id', onDelete: 'RESTRICT', hooks: true })
+            Goal.hasMany(models.Investment, { as: 'investments', foreignKey: 'goal_d' })
         }
     }
-    level.init({
+    Goal.init({
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
         name: DataTypes.STRING,
-        description: DataTypes.STRING,
-        access: DataTypes.STRING,
+        details: DataTypes.TEXT,
         status: DataTypes.BOOLEAN,
-        created_by: DataTypes.STRING,
-        updated_by: DataTypes.STRING,
+        created_by: DataTypes.UUID,
+        updated_by: DataTypes.UUID
     }, {
         sequelize,
-        modelName: 'level',
+        modelName: 'Goal',
         createdAt: 'created_at',
         updatedAt: 'updated_at'
     })
-    return level
+    return Goal
 }

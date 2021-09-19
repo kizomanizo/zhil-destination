@@ -1,14 +1,14 @@
 'use strict'
 const { v4: uuidv4 } = require('uuid')
 const dotenv = require('dotenv').config()
-const Level = require('../models').level
+const Level = require('../models').Level
 const bcrypt = require('bcrypt')
 
 async function getLevel (name) {
-    var level_id = await Level.findOne({ where: {name: name}, attributes: ["id"] })
-    level_id = JSON.stringify(level_id)
-    level_id = JSON.parse(level_id)
-    return level_id.id
+    var levelId = await Level.findOne({ where: {name: name}, attributes: ["id"] })
+    levelId = JSON.stringify(levelId)
+    levelId = JSON.parse(levelId)
+    return levelId.id
 }
 
 async function hasher(password) {

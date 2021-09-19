@@ -1,12 +1,12 @@
-'use strict';
-const { Model } = require('sequelize');
+'use strict'
+const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-  class investmenttype extends Model {
+  class InvestmentType extends Model {
     static associate(models) {
-      investmenttype.hasMany(models.investment, { as: 'investments', foreignKey: 'investmenttype_d', onDelete: 'RESTRICT', hooks: true })
+      InvestmentType.hasMany(models.Investment, { as: 'investments', foreignKey: 'investmenttype_id', onDelete: 'RESTRICT', hooks: true })
     }
-  };
-  investmenttype.init({
+  }
+  InvestmentType.init({
     id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
     name: DataTypes.STRING,
     status: DataTypes.BOOLEAN,
@@ -14,10 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     updated_by: DataTypes.UUID
   }, {
     sequelize,
-    modelName: 'investmenttype',
+    modelName: 'InvestmentType',
     tableName: 'investmenttypes',
     createdAt: 'created_at',
     updatedAt: 'updated_at'
-  });
-  return investmenttype;
-};
+  })
+  return InvestmentType
+}     

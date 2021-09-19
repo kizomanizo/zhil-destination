@@ -12,6 +12,9 @@ winston.add(new winston.transports.File({ filename: 'logs/info.log', level: 'inf
 
 var app = express();
 
+// Remove 'X-Powered-By' header from HTTP response headers - Kz
+app.disable('x-powered-by');
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());

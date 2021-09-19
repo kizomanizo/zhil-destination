@@ -1,12 +1,12 @@
-'use strict';
-const { Model } = require('sequelize');
+'use strict'
+const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-  class activity extends Model {
+  class Activity extends Model {
     static associate(models) {
-      activity.belongsTo(models.investment, { as: 'investment', foreignKey: 'investment_id' })
+      Activity.belongsTo(models.Investment, { as: 'investment', foreignKey: 'investment_id' })
     }
-  };
-  activity.init({
+  }
+  Activity.init({
     name: DataTypes.STRING,
     order: DataTypes.NUMBER,
     investment_id: DataTypes.STRING,
@@ -15,9 +15,9 @@ module.exports = (sequelize, DataTypes) => {
     updated_by: DataTypes.UUID
   }, {
     sequelize,
-    modelName: 'activity',
+    modelName: 'Activity',
     createdAt: 'created_at',
     updatedAt: 'updated_at'
-  });
-  return activity;
-};
+  })
+  return Activity
+}

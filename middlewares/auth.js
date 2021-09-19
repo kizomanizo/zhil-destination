@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 const { ErrorHandler } = require("../helpers/error")
 const dotenv = require('dotenv')
-const User = require('../models').user
+const User = require('../models').User
 const ms = require('ms')
 const bcrypt = require('bcrypt')
 dotenv.config()

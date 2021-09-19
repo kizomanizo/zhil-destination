@@ -1,13 +1,13 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-    class user extends Model {
+    class User extends Model {
         static associate(models) {
-            user.hasOne(models.person, { as: 'person', foreignKey: 'user_id', onDelete: 'cascade', hooks: true })
-            user.belongsTo(models.level, { as: 'level', foreignKey: 'level_id' })
+            User.hasOne(models.Person, { as: 'person', foreignKey: 'user_id', onDelete: 'cascade', hooks: true })
+            User.belongsTo(models.Level, { as: 'level', foreignKey: 'level_id' })
         }
     }
-    user.init({
+    User.init({
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
         username: DataTypes.STRING,
         email: DataTypes.STRING,
@@ -22,9 +22,10 @@ module.exports = (sequelize, DataTypes) => {
         updated_by: DataTypes.STRING,
         }, {
             sequelize,
-            modelName: 'user',
+            modelName: 'User',
+            tableName: 'users',
             createdAt: 'created_at',
             updatedAt: 'updated_at'
         })
-    return user
+    return User
 }

@@ -36,8 +36,9 @@ Content-Type: application/json
 Authorization: {{authToken}}
 
 {
-    "status": false,
-    "firstname": "Changed"
+    "status": true,
+    "firstname": "Changed again",
+    "organization": "An updated Organization, once more"
 }
 
 ### Delete a user
@@ -45,7 +46,7 @@ DELETE {{baseUrl}}/{{addeduserId}}
 Authorization: {{authToken}}
 
 ### Delete specific
-DELETE {{baseUrl}}/9aa4e0c7-b785-4e75-874f-eb7eb9c7047
+DELETE {{baseUrl}}/e172f1ab-e256-4cc5-95c9-1ae0f99b1715
 Authorization: {{authToken}}
 
 ### Get all levels
