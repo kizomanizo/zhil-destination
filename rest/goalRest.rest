@@ -1,0 +1,53 @@
+# Variables
+@baseUrl = http://localhost:4001/api/v1/goals
+@int = {{$randomInt 1000 9999}}
+@authToken = {{login.response.body.message}}
+@addedgoalId = {{creategoal.response.body.message.id}}
+
+### Get all goals
+GET {{baseUrl}}/ HTTP/1.1
+Authorization: {{authToken}}
+
+### Add a goal
+# @name creategoal
+POST {{baseUrl}}/ HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+{
+    "name": "{{int}}goal",
+    "details": "{{int}} goal created for test purposes."
+}
+
+### Get goal details
+GET {{baseUrl}}/{{addedgoalId}}
+Authorization: {{authToken}}
+
+### Update Specific goal Details
+PATCH {{baseUrl}}/{{addedgoalId}} HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+{
+    "name": "Admin",
+    "details": "Updated admin goal.",
+    "status": true
+}
+
+### Delete a specific goal
+DELETE {{baseUrl}}/{{addedgoalId}} HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+### Bogus Route
+GET http://localhost:3000/boguses/ HTTP/1.1
+
+### Post login credentials to get a token
+ # @name login
+POST http://localhost:4001/api/v1/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "{{$dotenv DEMO_PASSWORD}}"
+}

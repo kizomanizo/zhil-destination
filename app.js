@@ -5,6 +5,8 @@ const winston = require('winston');
 
 var usersRouter = require('./routes/users');
 var levelsRouter = require('./routes/levels');
+var goalsRouter = require('./routes/goals');
+
 const cors = require('cors');
 const { handleError } = require('./helpers/error');
 winston.add(new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),);
@@ -22,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/v1/users', usersRouter);
 app.use('/api/v1/levels', levelsRouter);
+app.use('/api/v1/goals', goalsRouter);
 app.use(cors({exposedHeaders: ['x-auth-token']}));
 app.use((err, req, res, next) => { handleError(err, res) });
 
