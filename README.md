@@ -27,10 +27,11 @@ This backend is still a work-in-progress, upon completion; this banner will be r
 
 ### DB Versions ###
 Name your databases in the `confic/config.json` file using the following formart:
-SN | Development | Testing      | Production
--- | ----------- | ------------ | ------------
-1  | roadmap_dev | roadmap_test | roadmap_prod
-2  | roadmapDev  | roadmapTest  | roadmapProd
+
+SN           | Development  | Testing      | Production
+------------ | ------------ | ------------ | ------------
+1            | roadmap_dev  | roadmap_test | roadmap_prod
+2            | roadmapDev   | roadmapTest  | roadmapProd
 
 ## License
 MIT
