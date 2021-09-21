@@ -30,8 +30,18 @@ async function remove(req, res, next) {
 }
 
 async function login(req, res, next) {
-    try { apiHelper.apiResponse(res, 200, "Login", "Login successful!", await userService.login(req))}
+    try { apiHelper.apiResponse(res, 200, "Login", "Login successful!", await userService.login(req)) }
     catch (error) { next(error) }
 }
 
-module.exports = { list,create, find, update, remove, login, };
+async function me(req, res, next) {
+    try { apiHelper.apiResponse(res, 200, "Details", "Details found!", await userService.me(req)) }
+    catch (error) { next(error) }
+}
+
+async function signout(req, res, next) {
+    try { apiHelper.apiResponse(res, 200, "Signout", "You have signed out!", await userService.signout()) }
+    catch (error) { next(error) }
+}
+
+module.exports = { list, create, find, update, remove, login, me, signout, };

@@ -22,10 +22,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(cors({exposedHeaders: ['x-auth-token']}));
 app.use('/api/v1/users', usersRouter);
 app.use('/api/v1/levels', levelsRouter);
 app.use('/api/v1/goals', goalsRouter);
-app.use(cors({exposedHeaders: ['x-auth-token']}));
 app.use((err, req, res, next) => { handleError(err, res) });
 
 module.exports = app;

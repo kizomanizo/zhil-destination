@@ -68,3 +68,13 @@ Content-Type: application/json
     "username": "admin",
     "password": "{{$dotenv DEMO_PASSWORD}}"
 }
+
+### Pull my details
+ # @name me
+GET http://localhost:4001/api/v1/users/me/details HTTP/1.1
+Authorization: {{authToken}}
+
+### Signour front end
+ # @name signout
+POST {{baseUrl}}/signout HTTP/1.1
+Authorization: {{authToken}}

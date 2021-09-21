@@ -102,4 +102,15 @@ async function login(req) {
     return auth.login(req)
 }
 
-module.exports = { list, create, find, update, remove, login, }
+async function me(req) {
+    const details = await User.findOne({ where: { username: req.decoded.username }, include: ['person'] })
+        delete details.dataValues.salt_rounds
+        delete details.dataValues.password
+    return details
+}
+
+async function signout() {
+    return 'User has performed a signout action'
+}
+
+module.exports = { list, create, find, update, remove, login, me, signout, }
