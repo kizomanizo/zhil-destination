@@ -36,7 +36,7 @@ Content-Type: application/json
 Authorization: {{authToken}}
 
 {
-    "status": true,
+    "status": false,
     "firstname": "Changed again",
     "organization": "An updated Organization, once more"
 }
@@ -78,3 +78,4 @@ Authorization: {{authToken}}
  # @name signout
 POST {{baseUrl}}/signout HTTP/1.1
 Authorization: {{authToken}}
+

@@ -5,27 +5,27 @@ const levelService = require('../services/levels')
 const apiHelper = require('../helpers/api')
 
 async function list(_req, res, next) {
-    try { apiHelper.apiResponse(res, 200, 'Search', 'Levels found!', await levelService.list()) }
+    try { apiHelper.apiResponse(res, true, 200, 'Search', 'Levels found!', await levelService.list()) }
     catch (error) { next(error) }
 }
 
 async function create(req, res, next) {
-    try { apiHelper.apiResponse(res, 201, 'Create', 'Level created!', await levelService.create(req)) }
+    try { apiHelper.apiResponse(res, true, 201, 'Create', 'Level created!', await levelService.create(req)) }
     catch (error) { next(error) }
 }
 
 async function find(req, res, next) {
-    try {apiHelper.apiResponse(res, 200, 'Find', 'Level found!', await levelService.find(req.params.id)) }
+    try {apiHelper.apiResponse(res, true, 200, 'Find', 'Level found!', await levelService.find(req.params.id)) }
     catch (error) { next(error) }
 }
 
 async function update(req, res, next) {
-    try { apiHelper.apiResponse(res, 200, 'Update', "Level updated!", await levelService.update(req, res, req.params.id)) }
+    try { apiHelper.apiResponse(res, true, 200, 'Update', "Level updated!", await levelService.update(req, res, req.params.id)) }
     catch (error) { next(error) }
 }
 
 async function remove(req, res, next) {
-    try { apiHelper.apiResponse(res, 202, 'Delete', "Level deleted!", await levelService.remove(req.params.id)) }
+    try { apiHelper.apiResponse(res, true, 202, 'Delete', "Level deleted!", await levelService.remove(req.params.id)) }
     catch (error) { next(error) }
 }
 

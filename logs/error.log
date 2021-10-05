@@ -50,3 +50,21 @@
 {"message":"Tue Sep 21 2021 09:14:40 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
 {"message":"Tue Sep 21 2021 09:14:44 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
 {"message":"Tue Sep 21 2021 10:30:14 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Tue Sep 21 2021 16:55:33 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Tue Sep 21 2021 16:56:24 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.","level":"error"}
+{"message":"Tue Sep 21 2021 16:56:31 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Tue Sep 21 2021 16:56:33 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Tue Sep 21 2021 16:56:38 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.","level":"error"}
+{"message":"Tue Sep 21 2021 16:57:19 GMT+0300 (East Africa Time)- Error ( 404): Aargh That level doesn't exist.","level":"error"}
+{"message":"Tue Sep 21 2021 17:01:00 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Thu Sep 30 2021 23:31:33 GMT+0300 (East Africa Time)- Error ( 401): Auth token is not supplied.","level":"error"}
+{"message":"Thu Sep 30 2021 23:31:56 GMT+0300 (East Africa Time)- Error ( 401): Auth token is not supplied.","level":"error"}
+{"message":"Thu Sep 30 2021 23:36:04 GMT+0300 (East Africa Time)- Error ( 401): Auth token is not supplied.","level":"error"}
+{"message":"Thu Sep 30 2021 23:37:21 GMT+0300 (East Africa Time)- Error ( 400): Match false","level":"error"}
+{"message":"Thu Sep 30 2021 23:37:28 GMT+0300 (East Africa Time)- Error ( 400): Match false","level":"error"}
+{"message":"Thu Sep 30 2021 23:39:55 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter \"id\" has invalid \"undefined\" value","level":"error"}
+{"message":"Thu Sep 30 2021 23:44:09 GMT+0300 (East Africa Time)- Error ( 404): A'ight, User not Found!.","level":"error"}
+{"message":"Thu Sep 30 2021 23:52:26 GMT+0300 (East Africa Time)- Error ( 404): Yikes, Level not found!","level":"error"}
+{"message":"Thu Sep 30 2021 23:53:25 GMT+0300 (East Africa Time)- Error ( 404): Aargh That level doesn't exist.","level":"error"}
+{"message":"Thu Sep 30 2021 23:54:20 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.","level":"error"}
+{"message":"Thu Sep 30 2021 23:55:36 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}

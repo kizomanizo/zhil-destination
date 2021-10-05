@@ -14,6 +14,7 @@ async function errorLogger(err) {
 async function handleError (err, res, next) {
     await errorLogger(err);
     res.status(err.statusCode || 500).json({
+        success: false,
         type: "Error"+' '+err.statusCode,
         title: "Error thrown!",
         message: err.message,

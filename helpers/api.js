@@ -1,5 +1,6 @@
-function apiResponse (res, status, type, title, message) {
+function apiResponse (res, success, status, type, title, message) {
     return res.status(status).json({
+        success: success,
         type: type,
         title: title,
         message: message,
