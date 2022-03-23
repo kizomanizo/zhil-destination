@@ -30,8 +30,8 @@ Name your databases in the `config/config.json` file using the following formart
 
 SN           | Development  | Testing      | Production
 ------------ | ------------ | ------------ | ------------
-1            | pharmaste_dev  | pharmaste_test | pharmaste_prod
-2            | pharmasteDev   | pharmasteTest  | pharmasteProd
+1            |dbname_dev  |dbname_test |dbname_prod
+2            |dbnameDev   |dbnameTest  |dbnameProd
 
 ## License
 MIT
