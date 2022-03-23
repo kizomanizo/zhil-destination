@@ -1,7 +1,7 @@
-# Roadmap Costing Backend
-## Backend for the HEA roadmap costing tool.
+# PharmAste Backend
+## Backend for the Aste's Pharmacy Sales App.
 
-This will be coupled with a frontend that together make up the costing tool for Health Enterprise Architecture costing tool. This app is built on Express in NodeJS witout any view as it is supposed to be just a backend API.
+This will be coupled with a frontend that together make up the pharmacy sales app for Aste. This app is built on Express in NodeJS witout any view as it is supposed to be just a backend API.
 
 ## Installation ##
 
@@ -10,8 +10,8 @@ For development version of this repo, you will have to install mysql server and 
 ### Steps ###
 1. Install NodeJS 
 2. Install MySQL
-3. clone the repo from Github with `git clone https://github.com/kizomanizo/roadmap-costing-frontend.git`
-4. Open the cloned repo with `cd roadmap-costing-backend`
+3. clone the repo from Github with `git clone https://github.com/kizomanizo/pharmaste-backend.git`
+4. Open the cloned repo with `cd pharmaste-backend`
 5. Once inside the repo, install dependencies using `npm install`
 6. Open the repo using your favorite IDE
 7. Edit the `.env` file and add relevant variables such as port, demo users, demo levels, demo password, JWT secret word etc.
@@ -20,18 +20,18 @@ For development version of this repo, you will have to install mysql server and 
 10. Create database tables using `npx sequelize-cli db:migrate`
 11. Add defaut contents to the database (make sure you change user passwords) using `npx sequelize-cli db:seed:all`
 12. Start the application using `npx nodemon start`
-13. Access the site using API explorer tool such as Postman, Insomnia, VSCode REST Client etc. `localhost:PORT/api/v1/users` The users end point can be changed to levels,goals, investments or whatever you have in your models.
+13. Access the site using API explorer tool such as Postman, Insomnia, VSCode REST Client etc. `localhost:PORT/api/v1/users` The users end point can be changed to products, groups or whatever you have in your models.
 
 ## NOTE ##
 This backend is still a work-in-progress, upon completion; this banner will be removed.
 
 ### DB Versions ###
-Name your databases in the `confic/config.json` file using the following formart:
+Name your databases in the `config/config.json` file using the following formart:
 
 SN           | Development  | Testing      | Production
 ------------ | ------------ | ------------ | ------------
-1            | roadmap_dev  | roadmap_test | roadmap_prod
-2            | roadmapDev   | roadmapTest  | roadmapProd
+1            | pharmaste_dev  | pharmaste_test | pharmaste_prod
+2            | pharmasteDev   | pharmasteTest  | pharmasteProd
 
 ## License
 MIT
