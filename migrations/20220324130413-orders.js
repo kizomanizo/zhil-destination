@@ -1,7 +1,5 @@
 'use strict'
 
-const { BOOLEAN } = require("sequelize/types")
-
 module.exports = {
     up: async (queryInterface, Sequelize) => {
         await queryInterface.createTable('orders', {

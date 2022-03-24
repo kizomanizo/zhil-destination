@@ -3,7 +3,8 @@ const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
     class Order extends Model {
         static associate(models) {
-            OrderItem.belongsTo(models.Client, { as: 'client', foreignKey: 'client_id' })
+            Order.belongsTo(models.Client, { as: 'client', foreignKey: 'client_id' })
+            Order.belongsTo(models.Insurance, { as: 'insurance', foreignKey: 'insurance_id' })
             Order.hasMany(models.OrderItem, { as: 'order_items', foreignKey: 'order_id', onDelete: 'CASCADE', hooks: true })
         }
     }

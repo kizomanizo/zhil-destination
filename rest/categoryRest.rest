@@ -1,41 +1,41 @@
 # Variables
-@baseUrl = http://localhost:4001/api/v1/goals
+@baseUrl = http://localhost:4001/api/v1/categories
 @int = {{$randomInt 1000 9999}}
 @authToken = {{login.response.body.message}}
-@addedgoalId = {{creategoal.response.body.message.id}}
+@addedcategoryId = {{createcategory.response.body.message.id}}
 
-### Get all goals
+### Get all categories
 GET {{baseUrl}}/ HTTP/1.1
 Authorization: {{authToken}}
 
-### Add a goal
-# @name creategoal
+### Add a category
+# @name createcategory
 POST {{baseUrl}}/ HTTP/1.1
 Content-Type: application/json
 Authorization: {{authToken}}
 
 {
-    "name": "{{int}}goal",
-    "details": "{{int}} goal created for test purposes."
+    "name": "{{int}}category",
+    "description": "{{int}} category created for test purposes."
 }
 
-### Get goal details
-GET {{baseUrl}}/{{addedgoalId}}
+### Get category details
+GET {{baseUrl}}/{{addedcategoryId}}
 Authorization: {{authToken}}
 
-### Update Specific goal Details
-PATCH {{baseUrl}}/{{addedgoalId}} HTTP/1.1
+### Update Specific category Details
+PATCH {{baseUrl}}/{{addedcategoryId}} HTTP/1.1
 Content-Type: application/json
 Authorization: {{authToken}}
 
 {
     "name": "Admin",
-    "details": "Updated admin goal.",
+    "description": "Updated admin category.",
     "status": true
 }
 
-### Delete a specific goal
-DELETE {{baseUrl}}/{{addedgoalId}} HTTP/1.1
+### Delete a specific category
+DELETE {{baseUrl}}/{{addedcategoryId}} HTTP/1.1
 Content-Type: application/json
 Authorization: {{authToken}}
 
