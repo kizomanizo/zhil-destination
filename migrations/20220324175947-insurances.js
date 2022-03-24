@@ -1,36 +1,27 @@
 'use strict'
+
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        await queryInterface.createTable('people', {
+        await queryInterface.createTable('insurances', {
             id: {
                 allowNull: false,
                 primaryKey: true,
                 type: Sequelize.UUID,
                 defaultValue: Sequelize.UUIDV4
             },
-            firstname: {
+            name: {
                 type: Sequelize.STRING,
-                required: [true, "Firstname is required"]
+                required: [true, "Level name is required"]
             },
-            lastname: {
-                type: Sequelize.STRING,
-                required: [true, "Lastname is required"]
+            description: {
+                type: Sequelize.TEXT,
+                required: false,
+                defaultValue: "Level description"
             },
-            mobilephone: {
-                type: Sequelize.STRING,
-                required: false
-            },
-            organization: {
-                type: Sequelize.STRING,
-                required: [true, "Organization is required"]
-            },
-            user_id: {
-                  type: Sequelize.UUID,
-                  allowNull: false,
-                  references: {
-                  model: 'users',
-                  key: 'id'
-              }
+            status: {
+                type: Sequelize.BOOLEAN,
+                required: false,
+                defaultValue: true
             },
             created_by: {
                 type: Sequelize.UUID,
@@ -49,6 +40,6 @@ module.exports = {
         })
     },
     down: async (queryInterface, Sequelize) => {
-        await queryInterface.dropTable('people')
+        await queryInterface.dropTable('insurances')
     }
 }

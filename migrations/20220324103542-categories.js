@@ -2,7 +2,7 @@
 
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        await queryInterface.createTable('levels', {
+        await queryInterface.createTable('categories', {
             id: {
                 allowNull: false,
                 primaryKey: true,
@@ -11,16 +11,12 @@ module.exports = {
             },
             name: {
                 type: Sequelize.STRING,
-                required: [true, "Level name is required"]
+                required: [true, "Category name is required"]
             },
             description: {
-                type: Sequelize.STRING,
+                type: Sequelize.TEXT,
                 required: false,
-                defaultValue: "Level description"
-            },
-            access: {
-                type: Sequelize.STRING,
-                required: [true, "Level access level should be like 0.1.2.3"]
+                defaultValue: "Category description"
             },
             status: {
                 type: Sequelize.BOOLEAN,
@@ -44,6 +40,6 @@ module.exports = {
         })
     },
     down: async (queryInterface, Sequelize) => {
-        await queryInterface.dropTable('levels')
+        await queryInterface.dropTable('categories')
     }
 }

@@ -3,7 +3,7 @@ const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
     class User extends Model {
         static associate(models) {
-            User.hasOne(models.Person, { as: 'person', foreignKey: 'user_id', onDelete: 'cascade', hooks: true })
+            User.hasOne(models.Person, { as: 'person', foreignKey: 'user_id', onDelete: 'CASCADE', hooks: true })
             User.belongsTo(models.Level, { as: 'level', foreignKey: 'level_id' })
         }
     }

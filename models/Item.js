@@ -1,20 +1,21 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-    class Investment extends Model {
+    class Item extends Model {
         static associate(models) {
-          Investment.belongsTo(models.InvestmentType, { as: 'investmenttype', foreignKey: 'investmenttype_id' })
-          Investment.belongsTo(models.Goal, { as: 'goal', foreignKey: 'goal_id' })
-          Investment.hasMany(models.Activity, { as: 'activities', foreignKey: 'investment_id', onDelete: 'CASCADE', hooks: true })
+            Item.belongsTo(models.category, { as: 'category', foreignKey: 'category_id' })
+            Item.hasMany(models.OrderItem, { as: 'order_items', foreignKey: 'item_id', onDelete: 'RESTRICT', hooks: true })
         }
     }
-    Investment.init({
+    Item.init({
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
-        order: DataTypes.NUMBER,
-        investmenttype_id: DataTypes.STRING,
-        goal_id: DataTypes.STRING,
+        purchase_date: DataTypes.DATE,
+        expiry_date: DataTypes.DATE,
+        buying_price: DataTypes.NUMBER,
+        selling_price: DataTypes.NUMBER,
+        category_id: DataTypes.UUID,
         status: DataTypes.BOOLEAN,
         created_by: DataTypes.UUID,
         updated_by: DataTypes.UUID
@@ -24,5 +25,5 @@ module.exports = (sequelize, DataTypes) => {
         createdAt: 'created_at',
         updatedAt: 'updated_at'
     })
-    return Investment
+    return Item
 };

@@ -18,7 +18,6 @@ Authorization: {{authToken}}
     "firstname": "John",
     "lastname": "Doe",
     "mobilephone": "0791123456",
-    "organization": "Good Company Ltd.",
     "username": "{{int}}Member",
     "password": "{{int}}",
     "email": "{{int}}@example.com",
@@ -38,7 +37,6 @@ Authorization: {{authToken}}
 {
     "status": false,
     "firstname": "Changed again",
-    "organization": "An updated Organization, once more"
 }
 
 ### Delete a user
