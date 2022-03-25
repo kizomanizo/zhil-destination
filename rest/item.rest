@@ -1,0 +1,82 @@
+# Variables
+@baseUrl = http://localhost:4001/api/v1/items
+@int = {{$randomInt 1000 9999}}
+@authToken = {{login.response.body.message}}
+@addeditemId = {{createitem.response.body.message.id}}
+
+### Get all items
+GET {{baseUrl}}/ HTTP/1.1
+Authorization: {{authToken}}
+
+### Add a item
+# @name createitem
+POST {{baseUrl}}/ HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+{
+    "name": "{{int}}item",
+    "description": "{{int}} item created for test purposes.",
+    "purchase_date": "{{$datetime rfc1123}}",
+    "expiry_date": "2023-10-01",
+    "buying_price": 1500,
+    "selling_price": 2500,
+    "category_id": "{{categories.response.body.message[0].id}}"
+}
+
+### Add new category item
+# @name createitem
+POST {{baseUrl}}/ HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+{
+    "name": "{{int}}item",
+    "description": "{{int}} item created for test purposes.",
+    "purchase_date": "{{$datetime rfc1123}}",
+    "expiry_date": "2023-10-01",
+    "buying_price": 1500,
+    "selling_price": 2500,
+    "category_id": "4b15739d-1a53-4057-b781-20dbe8559364"
+}
+
+### Get item details
+GET {{baseUrl}}/{{addeditemId}}
+Authorization: {{authToken}}
+
+### Update Specific item Details
+PATCH {{baseUrl}}/{{addeditemId}} HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+{
+    "name": "{{int}}item",
+    "description": "{{int}} item created for test purposes.",
+    "purchase_date": "{{$datetime rfc1123}}",
+    "expiry_date": "2023-12-01",
+    "buying_price": 2000,
+    "selling_price": 3000,
+    "category_id": "{{categories.response.body.message[1].id}}",
+    "status": false
+}
+
+### Delete a specific item
+DELETE {{baseUrl}}/{{addeditemId}} HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+### Post login credentials to get a token
+ # @name login
+POST http://localhost:4001/api/v1/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "{{$dotenv DEMO_PASSWORD}}"
+}
+
+### Get all categories
+# @name categories
+GET http://localhost:4001/api/v1/categories HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}

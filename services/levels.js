@@ -37,7 +37,7 @@ async function update(req, id) {
         updatedLevel.updated_by = req.decoded.id
         updatedLevel.updated_at = Date()
         await updatedLevel.save()
-        logsHelper.infoLogger(updatedLevel.id, 'has been updated')
+        logsHelper.infoLogger(updatedLevel.id, ' level has been updated')
         return updatedLevel
     }   
 }
@@ -46,7 +46,7 @@ async function update(req, id) {
     const levelToRemove = await Level.findOne({where:{id:id}})
     if (!levelToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, Level not Found!.') }
     else {
-        logsHelper.infoLogger(levelToRemove.id, 'has been deleted')
+        logsHelper.infoLogger(levelToRemove.id, ' level has been deleted')
         return Level.destroy({where:{id:id}})
     }      
 }

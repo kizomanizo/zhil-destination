@@ -33,16 +33,16 @@ async function update(req, id) {
         updatedCategory.updated_by = req.decoded.id
         updatedCategory.updated_at = Date()
         await updatedCategory.save()
-        logsHelper.infoLogger(updatedCategory.id, 'has been updated')
+        logsHelper.infoLogger(updatedCategory.id, ' category has been updated')
         return updatedCategory
     }   
 }
 
  async function remove(id) {
-    const goalToRemove = await Category.findOne({where:{id:id}})
-    if (!goalToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, Category not Found!.') }
+    const categoryToRemove = await Category.findOne({where:{id:id}})
+    if (!categoryToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, Category not Found!.') }
     else {
-        logsHelper.infoLogger(goalToRemove.id, 'has been deleted.')
+        logsHelper.infoLogger(categoryToRemove.id, ' category has been deleted.')
         return Category.destroy({where:{id:id}})
     }      
 }

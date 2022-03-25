@@ -1,7 +1,7 @@
 const Express = require('express')
 const Router = Express.Router()
 const Auth = require('../middlewares/auth')
-const Controller = require('../controllers/goals')
+const Controller = require('../controllers/items')
 
 Router.route('/')
     .get(Auth.checkToken, Controller.list)

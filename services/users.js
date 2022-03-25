@@ -37,7 +37,6 @@ async function create(req, _res) {
             firstname: req.body.firstname,
             lastname: req.body.lastname,
             mobilephone: req.body.mobilephone,
-            organization: req.body.organization,
             created_by: req.decoded.id,
             updated_by: null,
         }]
@@ -76,14 +75,13 @@ async function update (req, id) {
         if (req.body.firstname != null) { updatedPerson.firstname = req.body.firstname }
         if (req.body.lastname != null) { updatedPerson.lastname = req.body.lastname }
         if (req.body.mobilephone != null) { updatedPerson.mobilephone = req.body.mobilephone }
-        if (req.body.organization != null) { updatedPerson.organization = req.body.organization }
         updatedPerson.updated_by = req.decoded.id
         updatedPerson.updated_at = Date(0)
         await updatedPerson.save()
             delete updatedUser.dataValues.salt_rounds
             delete updatedUser.dataValues.password
             delete updatedUser.dataValues.token_expiry
-        logsHelper.infoLogger(updatedUser.id, 'has been updated')   
+        logsHelper.infoLogger(updatedUser.id, ' user has been updated')   
         return await User.findOne({where:{id: req.params.id}, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_expiry'], include: ['person'] })
     }   
 }
@@ -92,7 +90,7 @@ async function remove(id) {
     const userToRemove = await User.findOne({where:{id: id}})
     if (!userToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, User not Found!.') }
     else {
-        logsHelper.infoLogger(userToRemove.id, 'has been deleted')
+        logsHelper.infoLogger(userToRemove.id, ' user has been deleted')
         userToRemove.destroy()
         return userToRemove.id
     }
