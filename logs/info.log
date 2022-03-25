@@ -1,0 +1,19 @@
+{"message":"Fri Mar 25 2022 21:12:07 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No items found!.","level":"error"}
+{"message":"Fri Mar 25 2022 21:12:37 GMT+0300 (East Africa Time)- Info  eb0e8e36-1c30-4220-9740-596f322eb395  item has been updated","level":"info"}
+{"message":"Fri Mar 25 2022 21:13:33 GMT+0300 (East Africa Time)- Info  2cf5230b-0af9-4707-91e8-937d6fd7a16f  insurance has been updated","level":"info"}
+{"message":"Fri Mar 25 2022 21:13:38 GMT+0300 (East Africa Time)- Info  2cf5230b-0af9-4707-91e8-937d6fd7a16f  insurance has been deleted.","level":"info"}
+{"message":"Fri Mar 25 2022 21:14:18 GMT+0300 (East Africa Time)- Error ( 401): Token is not valid!.","level":"error"}
+{"message":"Fri Mar 25 2022 21:14:26 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.","level":"error"}
+{"message":"Fri Mar 25 2022 21:14:31 GMT+0300 (East Africa Time)- Error ( undefined): Cannot add or update a child row: a foreign key constraint fails (`pharmaste`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))","level":"error"}
+{"message":"Fri Mar 25 2022 21:16:29 GMT+0300 (East Africa Time)- Error ( 404): Huh No records found.","level":"error"}
+{"message":"Fri Mar 25 2022 21:16:50 GMT+0300 (East Africa Time)- Error ( 404): Huh No records found.","level":"error"}
+{"message":"Fri Mar 25 2022 21:17:07 GMT+0300 (East Africa Time)- Error ( 404): Hmm! Client not found.","level":"error"}
+{"message":"Fri Mar 25 2022 21:17:30 GMT+0300 (East Africa Time)- Info  3d9f74bf-5bad-47c2-b6f0-bed3c277f5ea  client has been updated","level":"info"}
+{"message":"Fri Mar 25 2022 21:17:40 GMT+0300 (East Africa Time)- Info  41e92a37-81e6-4c61-b686-9325042af8aa  client has been deleted","level":"info"}
+{"message":"Fri Mar 25 2022 21:17:53 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.","level":"error"}
+{"message":"Fri Mar 25 2022 21:18:26 GMT+0300 (East Africa Time)- Error ( 400): Unexpected string in JSON at position 323","level":"error"}
+{"message":"Fri Mar 25 2022 21:18:52 GMT+0300 (East Africa Time)- Error ( 404): Error: Order not found!","level":"error"}
+{"message":"Fri Mar 25 2022 21:19:04 GMT+0300 (East Africa Time)- Info  0a932006-c573-4c04-9a53-f12885fe087e  order has been updated","level":"info"}
+{"message":"Fri Mar 25 2022 21:19:10 GMT+0300 (East Africa Time)- Info  0a932006-c573-4c04-9a53-f12885fe087e  order has been deleted.","level":"info"}
+{"message":"Fri Mar 25 2022 21:19:13 GMT+0300 (East Africa Time)- Error ( 404): Error: Order not found!","level":"error"}
+{"message":"Fri Mar 25 2022 21:19:26 GMT+0300 (East Africa Time)- Info  44c78dd4-a37e-49e2-bed4-2ab8015dc367  order has been updated","level":"info"}

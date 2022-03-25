@@ -29,14 +29,19 @@ GET {{baseUrl}}/{{addedorderId}}
 Authorization: {{authToken}}
 
 ### Update Specific order Details
-PATCH {{baseUrl}}/4425bc55-ec34-49b9-b61b-f40526132ea2 HTTP/1.1
+PATCH {{baseUrl}}/{{addedorderId}} HTTP/1.1
 Content-Type: application/json
 Authorization: {{authToken}}
 
 {
-    "name": "Syrup",
-    "description": "Drugs that are in liquid form in bottles to be administered orally.",
-    "status": true
+    "name": "Updated Order",
+    "description": "An old order that has been updated.",
+    "order_date": "{{$datetime iso8601}}",
+    "client_id": "{{clients.response.body.message[1].id}}",
+    "is_insured": false,
+    "insurance_number": "1234-5678-908R",
+    "insurance_id": "{{insurances.response.body.message[1].id}}",
+    "status": false
 }
 
 ### Delete a specific order
