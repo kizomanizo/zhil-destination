@@ -12,8 +12,8 @@ module.exports = (sequelize, DataTypes) => {
         description: DataTypes.STRING,
         access: DataTypes.STRING,
         status: DataTypes.BOOLEAN,
-        created_by: DataTypes.STRING,
-        updated_by: DataTypes.STRING,
+        created_by: DataTypes.UUID,
+        updated_by: DataTypes.UUID,
     }, {
         sequelize,
         modelName: 'Insurance',

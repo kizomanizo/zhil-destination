@@ -13,10 +13,6 @@ module.exports = {
                 allowNull: false,
                 type: Sequelize.DATE
             },
-            paid_price: {
-                type: Sequelize.INTEGER,
-                required: [true, "Paid price must be specified"],
-            },
             client_id: {
                 type: Sequelize.UUID,
                 allowNull: false,
@@ -25,7 +21,7 @@ module.exports = {
                     key: 'id'
                 }
             },
-            insurance: {
+            is_insured: {
                 type: Sequelize.BOOLEAN,
                 required: false,
                 defaultValue: false

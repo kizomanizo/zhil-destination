@@ -31,7 +31,7 @@ module.exports = {
                 join_date: new Date(Date.now()),
                 status: true,
                 level_id: await getLevel(process.env.LEVEL_ONE_NAME),
-                created_by: 'System',
+                created_by: uuidv4(),
                 created_at: new Date(Date.now()),
             },
             {
@@ -43,7 +43,7 @@ module.exports = {
                 join_date: new Date(Date.now()),
                 status: true,
                 level_id: await getLevel(process.env.LEVEL_TWO_NAME),
-                created_by: 'System',
+                created_by: uuidv4(),
                 created_at: new Date(Date.now()),
             },
             {
@@ -55,7 +55,7 @@ module.exports = {
                 join_date: new Date(Date.now()),
                 status: true,
                 level_id: await getLevel(process.env.LEVEL_THREE_NAME),
-                created_by: 'System',
+                created_by: uuidv4(),
                 created_at: new Date(Date.now()),
             }
         ], {})

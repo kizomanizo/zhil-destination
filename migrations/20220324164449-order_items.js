@@ -13,6 +13,10 @@ module.exports = {
                 type: Sequelize.INTEGER,
                 required: [true, "Sales amount must be specified"],
             },
+            paid_price: {
+                type: Sequelize.INTEGER,
+                required: [true, "Paid price must be specified"],
+            },
             order_id: {
                 type: Sequelize.UUID,
                 allowNull: false,

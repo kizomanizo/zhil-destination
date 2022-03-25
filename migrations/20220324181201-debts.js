@@ -13,7 +13,7 @@ module.exports = {
                 type: Sequelize.INTEGER,
                 required: [true, "Debt amount must be specified"],
             },
-            order_id: {
+            order_item_id: {
                 type: Sequelize.UUID,
                 allowNull: false,
                 references: {

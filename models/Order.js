@@ -11,9 +11,8 @@ module.exports = (sequelize, DataTypes) => {
     Order.init({
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
         order_date: DataTypes.DATE,
-        paid_price: DataTypes.INTEGER,
         client_id: DataTypes.UUID,
-        insurance: DataTypes.BOOLEAN,
+        is_insured: DataTypes.BOOLEAN,
         insurance_number: DataTypes.STRING,
         insurance_id: DataTypes.UUID,
         status: DataTypes.BOOLEAN,

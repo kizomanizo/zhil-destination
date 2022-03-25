@@ -20,7 +20,7 @@ module.exports = {
                 lastname: "Demo",
                 mobilephone: "0755437887",
                 user_id: await getUser(process.env.LEVEL_ONE_NAME),
-                created_by: 'System',
+                created_by: uuidv4(),
                 created_at: new Date(Date.now()),
             },
             {
@@ -29,7 +29,7 @@ module.exports = {
                 lastname: "Demo",
                 mobilephone: "0755437887",
                 user_id: await getUser(process.env.LEVEL_TWO_NAME),
-                created_by: 'System',
+                created_by: uuidv4(),
                 created_at: new Date(Date.now()),
             },
             {
@@ -38,7 +38,7 @@ module.exports = {
                 lastname: "Demo",
                 mobilephone: "0755437887",
                 user_id: await getUser(process.env.LEVEL_THREE_NAME),
-                created_by: 'System',
+                created_by: uuidv4(),
                 created_at: new Date(Date.now()),
             }
         ], {})

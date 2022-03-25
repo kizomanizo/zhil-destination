@@ -17,9 +17,9 @@ module.exports = (sequelize, DataTypes) => {
         last_login: DataTypes.DATE,
         token_expiry: DataTypes.DATE,
         status: DataTypes.BOOLEAN,
-        level_id: DataTypes.STRING,
-        created_by: DataTypes.STRING,
-        updated_by: DataTypes.STRING,
+        level_id: DataTypes.UUID,
+        created_by: DataTypes.UUID,
+        updated_by: DataTypes.UUID,
         }, {
             sequelize,
             modelName: 'User',

@@ -3,8 +3,8 @@ const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
     class Item extends Model {
         static associate(models) {
-            Item.belongsTo(models.category, { as: 'category', foreignKey: 'category_id' })
             Item.hasMany(models.OrderItem, { as: 'order_items', foreignKey: 'item_id', onDelete: 'RESTRICT', hooks: true })
+            Item.belongsTo(models.Category, { as: 'category', foreignKey: 'category_id' })
         }
     }
     Item.init({
@@ -21,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
         updated_by: DataTypes.UUID
     }, {
         sequelize,
-        modelName: 'Investment',
+        modelName: 'Item',
+        tableName: 'items',
         createdAt: 'created_at',
         updatedAt: 'updated_at'
     })

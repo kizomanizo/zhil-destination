@@ -12,8 +12,8 @@ module.exports = (sequelize, DataTypes) => {
         last_purchase: DataTypes.DATE,
         status: DataTypes.BOOLEAN,
         level_id: DataTypes.UUID,
-        created_by: DataTypes.STRING,
-        updated_by: DataTypes.STRING,
+        created_by: DataTypes.UUID,
+        updated_by: DataTypes.UUID,
         }, {
             sequelize,
             modelName: 'Client',
