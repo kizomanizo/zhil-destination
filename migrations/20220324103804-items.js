@@ -18,6 +18,11 @@ module.exports = {
                 required: false,
                 defaultValue: "Item description"
             },
+            batch_number: {
+                type: Sequelize.STRING,
+                required: false,
+                allowNull: true
+            },
             purchase_date: {
                 allowNull: false,
                 type: Sequelize.DATE

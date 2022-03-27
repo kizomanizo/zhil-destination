@@ -17,6 +17,7 @@ Authorization: {{authToken}}
 {
     "name": "{{int}}item",
     "description": "{{int}} item created for test purposes.",
+    "batch_number": "1234-5432",
     "purchase_date": "{{$datetime rfc1123}}",
     "expiry_date": "2023-10-01",
     "buying_price": 1500,
@@ -34,6 +35,7 @@ Authorization: {{authToken}}
     "name": "{{int}}item",
     "description": "{{int}} item created for test purposes.",
     "purchase_date": "{{$datetime rfc1123}}",
+    "batch_number": "1234-5432",
     "expiry_date": "2023-10-01",
     "buying_price": 1500,
     "selling_price": 2500,
@@ -52,6 +54,7 @@ Authorization: {{authToken}}
 {
     "name": "{{int}}item",
     "description": "{{int}} item created for test purposes.",
+    "batch_number": "1234-5432-123",
     "purchase_date": "{{$datetime rfc1123}}",
     "expiry_date": "2023-12-01",
     "buying_price": 2000,

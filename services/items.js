@@ -9,9 +9,10 @@ async function list() {
 }
 
 async function create(req, _res) {
-    const newItem = new Item(req.body);
+    const newItem = new Item(req.body)
         newItem.name = req.body.name
         newItem.description = req.body.description
+        newItem.batch_number = req.body.batch_number
         newItem.purchase_date = req.body.purchase_date
         newItem.expiry_date = req.body.expiry_date
         newItem.buying_price = req.body.buying_price
@@ -35,6 +36,7 @@ async function update(req, id) {
     else {
         if  (req.body.name != null ) { updatedItem.name = req.body.name }
         if ( req.body.description != null ) { updatedItem.description = req.body.description }
+        if ( req.body.batch_number != null ) { updatedItem.batch_number = req.body.batch_number }
         if ( req.body.purchase_date != null ) { updatedItem.purchase_date = req.body.purchase_date }
         if ( req.body.expiry_date != null ) { updatedItem.expiry_date = req.body.expiry_date }
         if ( req.body.buying_price != null ) { updatedItem.buying_price = req.body.buying_price }

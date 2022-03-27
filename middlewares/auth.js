@@ -13,7 +13,7 @@ async function checkToken (req, _res, next) {
         if (token.startsWith('Bearer ')) { token = token.slice(7, token.length) }
         if (token) {
             jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
-                if (err) { throw new ErrorHandler(401, 'Token is not valid!.') }
+                if (err) { throw new ErrorHandler(401, 'An invalid or missing auth token!.') }
                 else { 
                     req.decoded = decoded
                     next()

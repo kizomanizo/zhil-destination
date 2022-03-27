@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
+        batch_number: DataTypes.STRING,
         purchase_date: DataTypes.DATE,
         expiry_date: DataTypes.DATE,
         buying_price: DataTypes.NUMBER,
