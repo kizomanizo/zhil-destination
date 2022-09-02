@@ -22,3 +22,8 @@
 {"message":"Sun Mar 27 2022 17:30:58 GMT+0300 (East Africa Time)- Error ( undefined): Data too long for column 'client_id' at row 1","level":"error"}
 {"message":"Sun Mar 27 2022 17:31:38 GMT+0300 (East Africa Time)- Error ( 404): Huh No records found.","level":"error"}
 {"message":"Sun Mar 27 2022 17:32:00 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.","level":"error"}
+ERROR: undefined Fri Sep 02 2022 15:05:58 GMT+0300 (East Africa Time)- Error ( 401): An invalid or missing auth token!.
+ERROR: undefined Fri Sep 02 2022 15:06:35 GMT+0300 (East Africa Time)- Error ( 401): An invalid or missing auth token!.
+ERROR: undefined Fri Sep 02 2022 15:07:02 GMT+0300 (East Africa Time)- Error ( 401): An invalid or missing auth token!.
+ERROR: 2022-09-02T12:08:48.710Z Fri Sep 02 2022 15:08:48 GMT+0300 (East Africa Time)- Error ( 401): An invalid or missing auth token!.
+ERROR: 2022-09-02T12:19:38.285Z Fri Sep 02 2022 15:19:38 GMT+0300 (East Africa Time)- Error ( 404): Aargh That level doesn't exist.

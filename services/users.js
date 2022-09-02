@@ -45,7 +45,8 @@ async function create(req, _res) {
         // Covering private parts...
         delete user.dataValues.salt_rounds
         delete user.dataValues.password
-        delete user.dataValues.token_expiry    
+        delete user.dataValues.token_expiry
+    logsHelper.infoLogger(newUser.id, ' user has been created by '+ req.decoded.id)    
     return newUser
 }
 
@@ -101,7 +102,7 @@ async function login(req) {
 }
 
 async function me(req) {
-    const details = await User.findOne({ where: { username: req.decoded.username }, include: ['person'] })
+    const details = await User.findOne({ where: { id: req.decoded.id }, include: ['person'] })
         delete details.dataValues.salt_rounds
         delete details.dataValues.password
     return details

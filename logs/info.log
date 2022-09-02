@@ -31,3 +31,10 @@
 {"message":"Sun Mar 27 2022 17:31:38 GMT+0300 (East Africa Time)- Error ( 404): Huh No records found.","level":"error"}
 {"message":"Sun Mar 27 2022 17:32:00 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.","level":"error"}
 {"message":"Sun Mar 27 2022 17:32:09 GMT+0300 (East Africa Time)- Info  9bd7fe58-332a-451c-abbe-48ac67c72308  order has been updated","level":"info"}
+
+
+
+
+INFO: 2022-09-02T12:15:32.198Z Fri Sep 02 2022 15:15:32 GMT+0300 (East Africa Time)- Info  2abb3791-b916-46c7-828d-53d97abb9b23  user has logged in successfully
+
+INFO: 2022-09-02T12:24:40.859Z Fri Sep 02 2022 15:24:40 GMT+0300 (East Africa Time)- Info  c2ec0d65-6e55-448e-907b-1c3ec50d0fd5  user has been created by 2abb3791-b916-46c7-828d-53d97abb9b23
