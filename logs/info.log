@@ -38,3 +38,16 @@
 INFO: 2022-09-02T12:15:32.198Z Fri Sep 02 2022 15:15:32 GMT+0300 (East Africa Time)- Info  2abb3791-b916-46c7-828d-53d97abb9b23  user has logged in successfully
 
 INFO: 2022-09-02T12:24:40.859Z Fri Sep 02 2022 15:24:40 GMT+0300 (East Africa Time)- Info  c2ec0d65-6e55-448e-907b-1c3ec50d0fd5  user has been created by 2abb3791-b916-46c7-828d-53d97abb9b23
+INFO: 2022-09-02T12:43:02.351Z Fri Sep 02 2022 15:43:02 GMT+0300 (East Africa Time)- Info  2abb3791-b916-46c7-828d-53d97abb9b23  user has logged in successfully
+INFO: 2022-09-03T16:02:28.901Z Sat Sep 03 2022 19:02:28 GMT+0300 (East Africa Time)- Info  2abb3791-b916-46c7-828d-53d97abb9b23  user has logged in successfully
+INFO: 2022-09-03T16:02:44.663Z Sat Sep 03 2022 19:02:44 GMT+0300 (East Africa Time)- Info  20404829-bd69-43e4-af9f-2ec33778b67c  user has been created by 2abb3791-b916-46c7-828d-53d97abb9b23
+INFO: 2022-09-03T16:02:48.865Z Sat Sep 03 2022 19:02:48 GMT+0300 (East Africa Time)- Info  ce9881ba-3f38-4767-9fac-1b6124e3d3e4  user has been created by 2abb3791-b916-46c7-828d-53d97abb9b23
+INFO: 2022-09-03T16:31:34.289Z Sat Sep 03 2022 19:31:34 GMT+0300 (East Africa Time)- Info  0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5  user has been created by 2abb3791-b916-46c7-828d-53d97abb9b23
+
+
+
+
+INFO: 2022-09-03T16:33:36.946Z Sat Sep 03 2022 19:33:36 GMT+0300 (East Africa Time)- Info  0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5  Has been updated, now updating the person object...
+INFO: 2022-09-03T16:33:36.964Z Sat Sep 03 2022 19:33:36 GMT+0300 (East Africa Time)- Info  133b6710-6946-448e-b1ee-fd1694cc984a  Person belonging to user 0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5 has also been updated by 2abb3791-b916-46c7-828d-53d97abb9b23
+INFO: 2022-09-03T16:33:43.957Z Sat Sep 03 2022 19:33:43 GMT+0300 (East Africa Time)- Info  0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5  Has been updated, now updating the person object...
+INFO: 2022-09-03T16:33:43.959Z Sat Sep 03 2022 19:33:43 GMT+0300 (East Africa Time)- Info  133b6710-6946-448e-b1ee-fd1694cc984a  Person belonging to user 0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5 has also been updated by 2abb3791-b916-46c7-828d-53d97abb9b23

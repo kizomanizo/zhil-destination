@@ -27,3 +27,7 @@ ERROR: undefined Fri Sep 02 2022 15:06:35 GMT+0300 (East Africa Time)- Error ( 4
 ERROR: undefined Fri Sep 02 2022 15:07:02 GMT+0300 (East Africa Time)- Error ( 401): An invalid or missing auth token!.
 ERROR: 2022-09-02T12:08:48.710Z Fri Sep 02 2022 15:08:48 GMT+0300 (East Africa Time)- Error ( 401): An invalid or missing auth token!.
 ERROR: 2022-09-02T12:19:38.285Z Fri Sep 02 2022 15:19:38 GMT+0300 (East Africa Time)- Error ( 404): Aargh That level doesn't exist.
+ERROR: 2022-09-03T16:31:48.450Z Sat Sep 03 2022 19:31:48 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57
+ERROR: 2022-09-03T16:32:42.821Z Sat Sep 03 2022 19:32:42 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57
+ERROR: 2022-09-03T16:33:06.829Z Sat Sep 03 2022 19:33:06 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57
+ERROR: 2022-09-03T16:33:17.086Z Sat Sep 03 2022 19:33:17 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57

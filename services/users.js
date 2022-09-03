@@ -50,13 +50,16 @@ async function create(req, _res) {
     return newUser
 }
 
-async function find (id) {
+async function find (req, id) {
     const foundUser = await User.findOne({where:{id: id}, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_expiry'], include: 'person'})
     if (!foundUser) { throw new ErrorHandler(404, 'A\'ight, User not Found!.') }
-    else{ return foundUser }
+    else { 
+        logsHelper.infoLogger(foundUser.id, ' User has been searched by '+req.decoded.id)
+        return foundUser
+    }
 }
 
-async function update (req, id) {
+async function update (req) {
     // first update the user object
     const updatedUser = await User.findOne({where:{id: req.params.id}, include: ['person'] })
     if(!updatedUser) { throw new ErrorHandler(404, 'Hmm! User not found.') }
@@ -70,6 +73,8 @@ async function update (req, id) {
         updatedUser.updated_by = req.decoded.id
         updatedUser.updated_at = Date()
         await updatedUser.save()
+        // Log user update event
+        logsHelper.infoLogger(updatedUser.id, ' Has been updated, now updating the person object...')
 
         // Then upate the person object
         const updatedPerson = await Person.findOne({where: {user_id: req.params.id}})
@@ -82,17 +87,18 @@ async function update (req, id) {
             delete updatedUser.dataValues.salt_rounds
             delete updatedUser.dataValues.password
             delete updatedUser.dataValues.token_expiry
-        logsHelper.infoLogger(updatedUser.id, ' user has been updated')   
+        // Log person update event
+        logsHelper.infoLogger(updatedPerson.id, ' Person belonging to user '+updatedUser.id+' has also been updated by '+req.decoded.id)   
         return await User.findOne({where:{id: req.params.id}, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_expiry'], include: ['person'] })
     }   
 }
 
-async function remove(id) {
+async function remove(req, id) {
     const userToRemove = await User.findOne({where:{id: id}})
     if (!userToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, User not Found!.') }
     else {
-        logsHelper.infoLogger(userToRemove.id, ' user has been deleted')
         userToRemove.destroy()
+        logsHelper.infoLogger(userToRemove.id, ' user has been deletedby '+req.decoded.id)
         return userToRemove.id
     }
 }

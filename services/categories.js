@@ -15,7 +15,13 @@ async function create(req, _res) {
         newCategory.status = true
         newCategory.created_by = req.decoded.id
         newCategory.updated_by = null
-    return newCategory.save()
+    // Save the category now    
+    return newCategory.save(
+        function savedCategory(category) {
+            //log the creation action
+            logsHelper.infoLogger(category.id, ' category has been created')
+        }
+    )
 }
 
 async function find(id) {
