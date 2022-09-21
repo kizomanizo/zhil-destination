@@ -51,3 +51,73 @@ INFO: 2022-09-03T16:33:36.946Z Sat Sep 03 2022 19:33:36 GMT+0300 (East Africa Ti
 INFO: 2022-09-03T16:33:36.964Z Sat Sep 03 2022 19:33:36 GMT+0300 (East Africa Time)- Info  133b6710-6946-448e-b1ee-fd1694cc984a  Person belonging to user 0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5 has also been updated by 2abb3791-b916-46c7-828d-53d97abb9b23
 INFO: 2022-09-03T16:33:43.957Z Sat Sep 03 2022 19:33:43 GMT+0300 (East Africa Time)- Info  0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5  Has been updated, now updating the person object...
 INFO: 2022-09-03T16:33:43.959Z Sat Sep 03 2022 19:33:43 GMT+0300 (East Africa Time)- Info  133b6710-6946-448e-b1ee-fd1694cc984a  Person belonging to user 0a78fdf4-acf8-49d0-b67a-419bc0cb6fe5 has also been updated by 2abb3791-b916-46c7-828d-53d97abb9b23
+
+INFO: 2022-09-21T12:01:44.087Z Wed Sep 21 2022 15:01:44 GMT+0300 (East Africa Time)- Info  f58016b9-a109-45d2-81ac-b53ae0182943  user has logged in successfully
+INFO: 2022-09-21T12:03:23.311Z Wed Sep 21 2022 15:03:23 GMT+0300 (East Africa Time)- Info  f58016b9-a109-45d2-81ac-b53ae0182943  user has logged in successfully
+INFO: 2022-09-21T12:04:38.497Z Wed Sep 21 2022 15:04:38 GMT+0300 (East Africa Time)- Info  f58016b9-a109-45d2-81ac-b53ae0182943  user has logged in successfully
+INFO: 2022-09-21T12:04:45.006Z Wed Sep 21 2022 15:04:45 GMT+0300 (East Africa Time)- Info  f58016b9-a109-45d2-81ac-b53ae0182943  user has logged in successfully
+
+INFO: 2022-09-21T12:08:21.936Z Wed Sep 21 2022 15:08:21 GMT+0300 (East Africa Time)- Info  c0eda5e6-b339-405b-a7ce-d9da3fe10e18  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:37.129Z Wed Sep 21 2022 15:08:37 GMT+0300 (East Africa Time)- Info  b7b550c2-8ab2-4d2a-9b71-7bdcc10802e2  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:37.578Z Wed Sep 21 2022 15:08:37 GMT+0300 (East Africa Time)- Info  1dd7b3d7-8f0f-4c60-958a-9c0b794d2010  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:37.924Z Wed Sep 21 2022 15:08:37 GMT+0300 (East Africa Time)- Info  3ad31eb5-439f-4dd4-ae34-c0c843594fae  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:38.370Z Wed Sep 21 2022 15:08:38 GMT+0300 (East Africa Time)- Info  4316ba3d-7d09-4b32-be4d-92a51dc0f119  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:38.609Z Wed Sep 21 2022 15:08:38 GMT+0300 (East Africa Time)- Info  812894d4-8ceb-4445-b241-b3c328d5274a  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:38.875Z Wed Sep 21 2022 15:08:38 GMT+0300 (East Africa Time)- Info  c72930e9-1b36-4e72-a7c8-889288837de4  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:39.209Z Wed Sep 21 2022 15:08:39 GMT+0300 (East Africa Time)- Info  2501b566-73fe-48de-945c-00525734fa6e  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:39.494Z Wed Sep 21 2022 15:08:39 GMT+0300 (East Africa Time)- Info  16364b6b-6091-499d-9f28-bfaa3bb0b27f  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:39.760Z Wed Sep 21 2022 15:08:39 GMT+0300 (East Africa Time)- Info  7dfbfed5-759d-4ea6-8716-afc8169172dc  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:40.029Z Wed Sep 21 2022 15:08:40 GMT+0300 (East Africa Time)- Info  9a5b905f-ae57-444e-9945-3fb68c273a19  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:40.288Z Wed Sep 21 2022 15:08:40 GMT+0300 (East Africa Time)- Info  20453319-18c0-49ad-bbdf-aaf27009edfc  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:40.603Z Wed Sep 21 2022 15:08:40 GMT+0300 (East Africa Time)- Info  fbe56687-f5b4-499c-a0b0-5c951dd209fc  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:40.862Z Wed Sep 21 2022 15:08:40 GMT+0300 (East Africa Time)- Info  0a3badac-9a8d-4a69-b4a8-2d19cfe85e9a  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:08:41.147Z Wed Sep 21 2022 15:08:41 GMT+0300 (East Africa Time)- Info  3ce1c815-0d10-4820-bee7-c3172ed30656  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+
+INFO: 2022-09-21T12:10:28.627Z Wed Sep 21 2022 15:10:28 GMT+0300 (East Africa Time)- Info  90bd5586-5c18-4624-aa85-08a2848abf9e  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:10:59.160Z Wed Sep 21 2022 15:10:59 GMT+0300 (East Africa Time)- Info  91840db2-19d0-4939-8900-61951deb0259  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+
+INFO: 2022-09-21T12:11:40.715Z Wed Sep 21 2022 15:11:40 GMT+0300 (East Africa Time)- Info  91840db2-19d0-4939-8900-61951deb0259  Has been updated, now updating the person object...
+INFO: 2022-09-21T12:11:40.728Z Wed Sep 21 2022 15:11:40 GMT+0300 (East Africa Time)- Info  05cd97a6-a519-484b-8eec-b036c02f4de2  Person belonging to user 91840db2-19d0-4939-8900-61951deb0259 has also been updated by f58016b9-a109-45d2-81ac-b53ae0182943
+
+INFO: 2022-09-21T12:11:58.795Z Wed Sep 21 2022 15:11:58 GMT+0300 (East Africa Time)- Info  91840db2-19d0-4939-8900-61951deb0259  Has been updated, now updating the person object...
+INFO: 2022-09-21T12:11:58.797Z Wed Sep 21 2022 15:11:58 GMT+0300 (East Africa Time)- Info  05cd97a6-a519-484b-8eec-b036c02f4de2  Person belonging to user 91840db2-19d0-4939-8900-61951deb0259 has also been updated by f58016b9-a109-45d2-81ac-b53ae0182943
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INFO: 2022-09-21T12:35:31.979Z Wed Sep 21 2022 15:35:31 GMT+0300 (East Africa Time)- Info  91840db2-19d0-4939-8900-61951deb0259  User has been searched by f58016b9-a109-45d2-81ac-b53ae0182943
+
+INFO: 2022-09-21T12:38:19.068Z Wed Sep 21 2022 15:38:19 GMT+0300 (East Africa Time)- Info  91840db2-19d0-4939-8900-61951deb0259  User has been searched by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:38:25.554Z Wed Sep 21 2022 15:38:25 GMT+0300 (East Africa Time)- Info  91840db2-19d0-4939-8900-61951deb0259  User has been searched by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:40:11.453Z Wed Sep 21 2022 15:40:11 GMT+0300 (East Africa Time)- Info  b8d856c3-56fb-44d2-a22c-30f7fc9fc5c4  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:40:14.658Z Wed Sep 21 2022 15:40:14 GMT+0300 (East Africa Time)- Info  b8d856c3-56fb-44d2-a22c-30f7fc9fc5c4  User has been searched by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:40:18.625Z Wed Sep 21 2022 15:40:18 GMT+0300 (East Africa Time)- Info  b8d856c3-56fb-44d2-a22c-30f7fc9fc5c4  Has been updated, now updating the person object...
+INFO: 2022-09-21T12:40:18.639Z Wed Sep 21 2022 15:40:18 GMT+0300 (East Africa Time)- Info  f15e6798-27e6-4fe9-80a3-10864d94634e  Person belonging to user b8d856c3-56fb-44d2-a22c-30f7fc9fc5c4 has also been updated by f58016b9-a109-45d2-81ac-b53ae0182943
+
+INFO: 2022-09-21T12:47:51.336Z Wed Sep 21 2022 15:47:51 GMT+0300 (East Africa Time)- Info  b8d856c3-56fb-44d2-a22c-30f7fc9fc5c4  user has been deletedby f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:52:06.012Z Wed Sep 21 2022 15:52:06 GMT+0300 (East Africa Time)- Info  d84d9bec-d0b5-4e8d-92b2-b4fdd3c13b38  user has been created by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:52:08.778Z Wed Sep 21 2022 15:52:08 GMT+0300 (East Africa Time)- Info  d84d9bec-d0b5-4e8d-92b2-b4fdd3c13b38  User has been searched by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:52:10.581Z Wed Sep 21 2022 15:52:10 GMT+0300 (East Africa Time)- Info  d84d9bec-d0b5-4e8d-92b2-b4fdd3c13b38  Has been updated, now updating the person object...
+INFO: 2022-09-21T12:52:10.596Z Wed Sep 21 2022 15:52:10 GMT+0300 (East Africa Time)- Info  2e6ffb2d-5830-4363-9ae4-f6632f80c69f  Person belonging to user d84d9bec-d0b5-4e8d-92b2-b4fdd3c13b38 has also been updated by f58016b9-a109-45d2-81ac-b53ae0182943
+INFO: 2022-09-21T12:52:13.456Z Wed Sep 21 2022 15:52:13 GMT+0300 (East Africa Time)- Info  d84d9bec-d0b5-4e8d-92b2-b4fdd3c13b38  user has been deletedby f58016b9-a109-45d2-81ac-b53ae0182943
+
+
+
+
+
+

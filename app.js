@@ -5,11 +5,6 @@ const winston = require('winston')
 
 var usersRouter = require('./routes/users')
 var levelsRouter = require('./routes/levels')
-var categoriesRouter = require('./routes/categories')
-var itemsRouter = require('./routes/items.js')
-var clientsRouter = require('./routes/clients.js')
-var insurancesRouter = require('./routes/insurances.js')
-var ordersRouter = require('./routes/orders.js')
 
 const cors = require('cors')
 const { handleError } = require('./helpers/error')
@@ -53,11 +48,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors({exposedHeaders: ['x-auth-token']}))
 app.use('/api/v1/users', usersRouter)
 app.use('/api/v1/levels', levelsRouter)
-app.use('/api/v1/categories', categoriesRouter)
-app.use('/api/v1/items', itemsRouter)
-app.use('/api/v1/clients', clientsRouter)
-app.use('/api/v1/insurances', insurancesRouter)
-app.use('/api/v1/orders', ordersRouter)
 app.use((err, req, res, next) => { handleError(err, res) })
 
 module.exports = app

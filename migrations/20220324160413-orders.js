@@ -13,14 +13,6 @@ module.exports = {
                 allowNull: false,
                 type: Sequelize.DATE
             },
-            client_id: {
-                type: Sequelize.UUID,
-                allowNull: false,
-                references: {
-                    model: 'clients',
-                    key: 'id'
-                }
-            },
             is_insured: {
                 type: Sequelize.BOOLEAN,
                 required: false,
@@ -29,14 +21,6 @@ module.exports = {
             insurance_number: {
                 type: Sequelize.STRING,
                 allowNull: true
-            },
-            insurance_id: {
-                type: Sequelize.UUID,
-                allowNull: false,
-                references: {
-                    model: 'insurances',
-                    key: 'id'
-                }
             },
             status: {
                 type: Sequelize.BOOLEAN,

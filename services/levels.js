@@ -8,7 +8,7 @@ async function list() {
     return allLevels
 }
 
-async function create(req, _res) {
+async function create(req) {
     const newLevel = new Level(req.body);
         newLevel.name = req.body.name
         newLevel.description = req.body.description
@@ -19,13 +19,13 @@ async function create(req, _res) {
     return newLevel.save()
 }
 
-async function find(id) {
-    const foundLevel = await Level.findOne({where:{id:id}})
+async function find(req) {
+    const foundLevel = await Level.findOne({where:{id:req.params.id}})
         if(!foundLevel) { throw new ErrorHandler(404, 'Yikes, Level not found!') }
     return foundLevel
 }
 
-async function update(req, id) {
+async function update(req) {
     const updatedLevel = await Level.findOne({where:{id:req.params.id}})
     if(!updatedLevel) { throw new ErrorHandler(404, 'Error: Level not found!') }
     else {
@@ -42,12 +42,12 @@ async function update(req, id) {
     }   
 }
 
- async function remove(id) {
-    const levelToRemove = await Level.findOne({where:{id:id}})
+ async function remove(req) {
+    const levelToRemove = await Level.findOne({where:{id:req.params.id}})
     if (!levelToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, Level not Found!.') }
     else {
         logsHelper.infoLogger(levelToRemove.id, ' level has been deleted')
-        return Level.destroy({where:{id:id}})
+        return Level.destroy({where:{id:req.params.id}})
     }      
 }
 module.exports = { list, create, find, update, remove, }

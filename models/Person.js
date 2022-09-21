@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
     class Person extends Model {
         static associate(models) {
             Person.belongsTo(models.User, { as: 'user', foreignKey: 'user_id' })
-            Person.belongsTo(models.Client, { as: 'client', foreignKey: 'client_id' })
         }
     }
     Person.init({
@@ -13,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
         lastname: DataTypes.STRING,
         mobilephone: DataTypes.STRING,
         user_id: DataTypes.UUID,
-        client_id: DataTypes.UUID,
         created_by: DataTypes.UUID,
         updated_by: DataTypes.UUID,
     }, {

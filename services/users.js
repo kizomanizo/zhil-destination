@@ -50,8 +50,8 @@ async function create(req, _res) {
     return newUser
 }
 
-async function find (req, id) {
-    const foundUser = await User.findOne({where:{id: id}, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_expiry'], include: 'person'})
+async function find (req) {
+    const foundUser = await User.findOne({where:{ id: req.params.id }, attributes: ['id', 'username', 'email', 'status', 'join_date', 'token_expiry'], include: 'person'})
     if (!foundUser) { throw new ErrorHandler(404, 'A\'ight, User not Found!.') }
     else { 
         logsHelper.infoLogger(foundUser.id, ' User has been searched by '+req.decoded.id)
@@ -93,8 +93,8 @@ async function update (req) {
     }   
 }
 
-async function remove(req, id) {
-    const userToRemove = await User.findOne({where:{id: id}})
+async function remove(req) {
+    const userToRemove = await User.findOne({where:{id: req.params.id}})
     if (!userToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, User not Found!.') }
     else {
         userToRemove.destroy()

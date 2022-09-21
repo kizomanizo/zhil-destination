@@ -31,3 +31,35 @@ ERROR: 2022-09-03T16:31:48.450Z Sat Sep 03 2022 19:31:48 GMT+0300 (East Africa T
 ERROR: 2022-09-03T16:32:42.821Z Sat Sep 03 2022 19:32:42 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57
 ERROR: 2022-09-03T16:33:06.829Z Sat Sep 03 2022 19:33:06 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57
 ERROR: 2022-09-03T16:33:17.086Z Sat Sep 03 2022 19:33:17 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57
+ERROR: 2022-09-21T11:55:12.745Z Wed Sep 21 2022 14:55:12 GMT+0300 (East Africa Time)- Error ( undefined): Access denied for user 'zhildestination'@'localhost' (using password: YES)
+ERROR: 2022-09-21T12:05:40.838Z Wed Sep 21 2022 15:05:40 GMT+0300 (East Africa Time)- Error ( 404): Aargh That level doesn't exist.
+ERROR: 2022-09-21T12:08:43.350Z Wed Sep 21 2022 15:08:43 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'person.client_id' in 'field list'
+ERROR: 2022-09-21T12:11:30.026Z Wed Sep 21 2022 15:11:30 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 57
+ERROR: 2022-09-21T12:11:50.350Z Wed Sep 21 2022 15:11:50 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:12:01.882Z Wed Sep 21 2022 15:12:01 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:13:18.389Z Wed Sep 21 2022 15:13:18 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:14:16.761Z Wed Sep 21 2022 15:14:16 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:15:31.388Z Wed Sep 21 2022 15:15:31 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T12:16:30.781Z Wed Sep 21 2022 15:16:30 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:18:04.110Z Wed Sep 21 2022 15:18:04 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:18:18.429Z Wed Sep 21 2022 15:18:18 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:19:21.424Z Wed Sep 21 2022 15:19:21 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:20:06.052Z Wed Sep 21 2022 15:20:06 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T12:20:15.933Z Wed Sep 21 2022 15:20:15 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T12:24:49.971Z Wed Sep 21 2022 15:24:49 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:25:02.199Z Wed Sep 21 2022 15:25:02 GMT+0300 (East Africa Time)- Error ( 401): Auth token is not supplied.
+ERROR: 2022-09-21T12:25:06.760Z Wed Sep 21 2022 15:25:06 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:27:45.146Z Wed Sep 21 2022 15:27:45 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:28:46.120Z Wed Sep 21 2022 15:28:46 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T12:32:30.920Z Wed Sep 21 2022 15:32:30 GMT+0300 (East Africa Time)- Error ( undefined): req is not defined
+ERROR: 2022-09-21T12:32:57.385Z Wed Sep 21 2022 15:32:57 GMT+0300 (East Africa Time)- Error ( undefined): req is not defined
+ERROR: 2022-09-21T12:33:46.293Z Wed Sep 21 2022 15:33:46 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'decoded')
+ERROR: 2022-09-21T12:34:31.061Z Wed Sep 21 2022 15:34:31 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:35:31.981Z Wed Sep 21 2022 15:35:31 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
+ERROR: 2022-09-21T12:40:22.656Z Wed Sep 21 2022 15:40:22 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T12:52:23.567Z Wed Sep 21 2022 15:52:23 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
+ERROR: 2022-09-21T12:52:26.154Z Wed Sep 21 2022 15:52:26 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
+ERROR: 2022-09-21T12:52:49.636Z Wed Sep 21 2022 15:52:49 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
+ERROR: 2022-09-21T12:52:53.254Z Wed Sep 21 2022 15:52:53 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
+ERROR: 2022-09-21T12:52:57.353Z Wed Sep 21 2022 15:52:57 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
+ERROR: 2022-09-21T12:56:05.715Z Wed Sep 21 2022 15:56:05 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function

@@ -29,14 +29,6 @@ module.exports = {
                     key: 'id'
                 }
             },
-            client_id: {
-                type: Sequelize.UUID,
-                allowNull: true,
-                references: {
-                    model: 'clients',
-                    key: 'id'
-                }
-            },
             created_by: {
                 type: Sequelize.UUID,
                 required: true

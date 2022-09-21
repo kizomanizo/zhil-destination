@@ -39,14 +39,6 @@ module.exports = {
                 type: Sequelize.INTEGER,
                 required: [true, "Selling price must be specified"],
             },
-            category_id: {
-                type: Sequelize.UUID,
-                allowNull: true,
-                references: {
-                    model: 'categories',
-                    key: 'id'
-                }
-            },
             status: {
                 type: Sequelize.BOOLEAN,
                 required: false,
