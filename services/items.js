@@ -1,4 +1,5 @@
 const Item = require('../models').Item
+const OrderItem = require('../models').OrderItem
 const { ErrorHandler } = require("../helpers/error")
 const logsHelper = require('../helpers/logger')
 
@@ -49,11 +50,12 @@ async function update(req) {
     }   
 }
 
- async function remove(req) {
+async function remove(req) {
     const itemToRemove = await Item.findOne({ where:{ id:req.params.id } })
     if (!itemToRemove) { throw new ErrorHandler(404, 'Humpty dumpty, Item not Found!.') }
     else {
         logsHelper.infoLogger(itemToRemove.id, ' item has been deleted')
+        await OrderItem.destroy({ where:{ item_id:req.params.id }})
         return Item.destroy({ where:{ id:req.params.id } })
     }      
 }

@@ -1,17 +1,20 @@
 'use strict'
-const { Model, DatabaseError } = require('sequelize')
+const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
     class Order extends Model {
         static associate(models) {
-            Order.belongsToMany(models.Item, {through: 'OrderItem'})
+            Order.belongsToMany(models.Item, {
+                as:'items',
+                through: 'order_items',
+                foreignKey: 'order_id',
+                otherKey: 'item_id'
+            })
         }
     }
     Order.init({
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
-        quantity: DataTypes.INTEGER,
-        paid_price: DataTypes.INTEGER,
-        order_id: DataTypes.UUID,
-        item_id: DataTypes.UUID,
+        order_date: DataTypes.DATE,
+        status: DataTypes.BOOLEAN,
         created_by: DataTypes.UUID,
         updated_by: DataTypes.UUID
     }, {
@@ -21,5 +24,5 @@ module.exports = (sequelize, DataTypes) => {
         createdAt: 'created_at',
         updatedAt: 'updated_at'
     })
-  return Order
-}
+    return Order
+};

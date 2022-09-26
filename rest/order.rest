@@ -1,72 +1,65 @@
 # Variables
-@baseUrl = http://localhost:4001/api/v1/orders
+@baseUrl = http://localhost:4006/api/v1
 @int = {{$randomInt 1000 9999}}
 @authToken = {{login.response.body.message}}
 @addedorderId = {{createorder.response.body.message.id}}
 
 ### Get all orders
-GET {{baseUrl}}/ HTTP/1.1
+GET {{baseUrl}}/orders/ HTTP/1.1
 Authorization: {{authToken}}
 
 ### Add a order
 # @name createorder
-POST {{baseUrl}}/ HTTP/1.1
+POST {{baseUrl}}/orders/ HTTP/1.1
 Content-Type: application/json
 Authorization: {{authToken}}
 
 {
-    "name": "{{int}}order",
-    "description": "{{int}} order created for test purposes.",
     "order_date": "{{$datetime iso8601}}",
-    "client_id": "{{clients.response.body.message[0].id}}",
-    "is_insured": false,
-    "insurance_number": "1234-5678-908R",
-    "insurance_id": "{{insurances.response.body.message[0].id}}"
-}
-
-### Get order details
-GET {{baseUrl}}/{{addedorderId}}
-Authorization: {{authToken}}
-
-### Update Specific order Details
-PATCH {{baseUrl}}/{{addedorderId}} HTTP/1.1
-Content-Type: application/json
-Authorization: {{authToken}}
-
-{
-    "name": "Updated Order",
-    "description": "An old order that has been updated.",
-    "order_date": "{{$datetime iso8601}}",
-    "client_id": "{{clients.response.body.message[1].id}}",
-    "is_insured": false,
-    "insurance_number": "1234-5678-908R",
-    "insurance_id": "{{insurances.response.body.message[1].id}}",
+    "items":[    
+        {"item_id":"{{items.response.body.message[0].id}}", "quantity":10},
+        {"item_id":"{{items.response.body.message[1].id}}", "quantity":21},
+        {"item_id":"{{items.response.body.message[2].id}}", "quantity":14},
+        {"item_id":"{{items.response.body.message[3].id}}", "quantity":20}
+    ],
     "status": false
 }
 
+### Get order details
+GET {{baseUrl}}/orders/{{addedorderId}}
+Authorization: {{authToken}}
+
+### Update Specific order Details
+PATCH {{baseUrl}}/orders/{{addedorderId}} HTTP/1.1
+Content-Type: application/json
+Authorization: {{authToken}}
+
+{
+    "order_date": "{{$datetime iso8601}}",
+    "items":[    
+        {"item_id":"{{items.response.body.message[1].id}}", "quantity":34},
+        {"item_id":"{{items.response.body.message[2].id}}", "quantity":80}
+    ],
+    "status": true
+}
+
 ### Delete a specific order
-DELETE {{baseUrl}}/{{addedorderId}} HTTP/1.1
+DELETE {{baseUrl}}/orders/{{addedorderId}} HTTP/1.1
 Content-Type: application/json
 Authorization: {{authToken}}
 
 ### Post login credentials to get a token
  # @name login
-POST http://localhost:4001/api/v1/users/login HTTP/1.1
+POST {{baseUrl}}/users/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "username": "admin",
+    "username": "{{$dotenv LEVEL_ONE_NAME}}",
     "password": "{{$dotenv DEMO_PASSWORD}}"
 }
 
-### Get all clients
-# @name clients
-GET http://localhost:4001/api/v1/clients HTTP/1.1
-Content-Type: application/json
-Authorization: {{authToken}}
-
-### Get all insurances
-# @name insurances
-GET http://localhost:4001/api/v1/insurances HTTP/1.1
+### Get all items for picking random IDs
+# @name items
+GET {{baseUrl}}/items HTTP/1.1
 Content-Type: application/json
 Authorization: {{authToken}}

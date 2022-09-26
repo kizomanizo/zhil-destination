@@ -2,21 +2,43 @@
 
 module.exports = {
     up: async (queryInterface, Sequelize) => {
-        await queryInterface.createTable('orders', {
+        await queryInterface.createTable('order_items', {
             id: {
                 allowNull: false,
                 primaryKey: true,
                 type: Sequelize.UUID,
                 defaultValue: Sequelize.UUIDV4
             },
-            order_date: {
+            item_id: {
+                type: Sequelize.UUID,
                 allowNull: false,
-                type: Sequelize.DATE
+                references: {
+                  model: 'items',
+                  key: 'id'
+                }
+            },
+            order_id: {
+                type: Sequelize.UUID,
+                allowNull: false,
+                references: {
+                  model: 'orders',
+                  key: 'id'
+                }
             },
             status: {
                 type: Sequelize.BOOLEAN,
                 required: false,
-                defaultValue: true
+                defaultValue: false
+            },
+            quantity: {
+                type: Sequelize.INTEGER,
+                required: false,
+                allowNull: true
+            },
+            payment: {
+                type: Sequelize.INTEGER,
+                required: false,
+                allowNull: true
             },
             created_by: {
                 type: Sequelize.UUID,
@@ -35,6 +57,6 @@ module.exports = {
         })
     },
     down: async (queryInterface, Sequelize) => {
-        await queryInterface.dropTable('orders')
+        await queryInterface.dropTable('order_items')
     }
 }

@@ -63,3 +63,590 @@ ERROR: 2022-09-21T12:52:49.636Z Wed Sep 21 2022 15:52:49 GMT+0300 (East Africa T
 ERROR: 2022-09-21T12:52:53.254Z Wed Sep 21 2022 15:52:53 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
 ERROR: 2022-09-21T12:52:57.353Z Wed Sep 21 2022 15:52:57 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
 ERROR: 2022-09-21T12:56:05.715Z Wed Sep 21 2022 15:56:05 GMT+0300 (East Africa Time)- Error ( undefined): res.status is not a function
+ERROR: 2022-09-21T15:46:05.088Z Wed Sep 21 2022 18:46:05 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 225
+ERROR: 2022-09-21T15:46:48.223Z Wed Sep 21 2022 18:46:48 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 225
+ERROR: 2022-09-21T15:46:51.206Z Wed Sep 21 2022 18:46:51 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 225
+ERROR: 2022-09-21T15:47:12.893Z Wed Sep 21 2022 18:47:12 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 225
+ERROR: 2022-09-21T15:49:03.015Z Wed Sep 21 2022 18:49:03 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 225
+ERROR: 2022-09-21T15:49:19.785Z Wed Sep 21 2022 18:49:19 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.
+ERROR: 2022-09-21T15:53:51.884Z Wed Sep 21 2022 18:53:51 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No items found!.
+ERROR: 2022-09-21T15:54:22.541Z Wed Sep 21 2022 18:54:22 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No items found!.
+ERROR: 2022-09-21T15:57:10.775Z Wed Sep 21 2022 18:57:10 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, User not Found!.
+ERROR: 2022-09-21T16:02:49.001Z Wed Sep 21 2022 19:02:49 GMT+0300 (East Africa Time)- Error ( 400): Match false
+ERROR: 2022-09-21T16:03:47.473Z Wed Sep 21 2022 19:03:47 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.
+ERROR: 2022-09-21T16:04:28.917Z Wed Sep 21 2022 19:04:28 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No items found!.
+ERROR: 2022-09-21T16:15:49.209Z Wed Sep 21 2022 19:15:49 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 172
+ERROR: 2022-09-21T16:16:00.447Z Wed Sep 21 2022 19:16:00 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token } in JSON at position 172
+ERROR: 2022-09-21T16:16:46.773Z Wed Sep 21 2022 19:16:46 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token [ in JSON at position 62
+ERROR: 2022-09-21T16:18:25.712Z Wed Sep 21 2022 19:18:25 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token { in JSON at position 52
+ERROR: 2022-09-21T16:20:32.625Z Wed Sep 21 2022 19:20:32 GMT+0300 (East Africa Time)- Error ( 400): Unexpected token ] in JSON at position 370
+ERROR: 2022-09-21T16:20:41.641Z Wed Sep 21 2022 19:20:41 GMT+0300 (East Africa Time)- Error ( undefined): Field 'purchase_date' doesn't have a default value
+ERROR: 2022-09-21T16:22:09.801Z Wed Sep 21 2022 19:22:09 GMT+0300 (East Africa Time)- Error ( undefined): Field 'order_date' doesn't have a default value
+ERROR: 2022-09-21T16:22:24.630Z Wed Sep 21 2022 19:22:24 GMT+0300 (East Africa Time)- Error ( undefined): Field 'order_date' doesn't have a default value
+ERROR: 2022-09-21T16:23:38.941Z Wed Sep 21 2022 19:23:38 GMT+0300 (East Africa Time)- Error ( undefined): Unknown column 'date' in 'field list'
+ERROR: 2022-09-21T16:25:51.036Z Wed Sep 21 2022 19:25:51 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'forEach')
+ERROR: 2022-09-21T16:26:47.149Z Wed Sep 21 2022 19:26:47 GMT+0300 (East Africa Time)- Error ( undefined): list.allOrders is not a function
+ERROR: 2022-09-21T16:27:09.388Z Wed Sep 21 2022 19:27:09 GMT+0300 (East Africa Time)- Error ( undefined): this.list.allOrders is not a function
+ERROR: 2022-09-21T16:35:54.873Z Wed Sep 21 2022 19:35:54 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.
+ERROR: 2022-09-21T16:37:42.108Z Wed Sep 21 2022 19:37:42 GMT+0300 (East Africa Time)- Error ( undefined): Item is not defined
+ERROR: 2022-09-21T16:38:18.729Z Wed Sep 21 2022 19:38:18 GMT+0300 (East Africa Time)- Error ( undefined): OrderItem is not defined
+ERROR: 2022-09-21T16:38:40.735Z Wed Sep 21 2022 19:38:40 GMT+0300 (East Africa Time)- Error ( undefined): i is not defined
+ERROR: 2022-09-21T16:51:35.308Z Wed Sep 21 2022 19:51:35 GMT+0300 (East Africa Time)- Error ( undefined): array is not defined
+ERROR: 2022-09-21T16:51:53.836Z Wed Sep 21 2022 19:51:53 GMT+0300 (East Africa Time)- Error ( undefined): array is not defined
+ERROR: 2022-09-21T16:59:38.095Z Wed Sep 21 2022 19:59:38 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.
+ERROR: 2022-09-21T16:59:48.589Z Wed Sep 21 2022 19:59:48 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No items found!.
+ERROR: 2022-09-21T17:00:04.683Z Wed Sep 21 2022 20:00:04 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No items found!.
+ERROR: 2022-09-21T17:00:20.290Z Wed Sep 21 2022 20:00:20 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.
+ERROR: 2022-09-21T17:07:01.976Z Wed Sep 21 2022 20:07:01 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No items found!.
+ERROR: 2022-09-21T17:07:27.883Z Wed Sep 21 2022 20:07:27 GMT+0300 (East Africa Time)- Error ( 404): Lolz; No orders found!.
+ERROR: 2022-09-21T17:16:51.058Z Wed Sep 21 2022 20:16:51 GMT+0300 (East Africa Time)- Error ( undefined): Item is not associated to Order!
+ERROR: 2022-09-21T17:17:55.286Z Wed Sep 21 2022 20:17:55 GMT+0300 (East Africa Time)- Error ( undefined): Item is associated to Order using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+ERROR: 2022-09-21T18:09:50.966Z Wed Sep 21 2022 21:09:50 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T18:16:46.176Z Wed Sep 21 2022 21:16:46 GMT+0300 (East Africa Time)- Error ( undefined): id is not defined
+ERROR: 2022-09-21T18:18:27.730Z Wed Sep 21 2022 21:18:27 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T18:18:57.151Z Wed Sep 21 2022 21:18:57 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T18:19:31.347Z Wed Sep 21 2022 21:19:31 GMT+0300 (East Africa Time)- Error ( undefined): index is not defined
+ERROR: 2022-09-21T18:20:01.913Z Wed Sep 21 2022 21:20:01 GMT+0300 (East Africa Time)- Error ( undefined): index is not defined
+ERROR: 2022-09-21T18:20:31.615Z Wed Sep 21 2022 21:20:31 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T18:21:03.410Z Wed Sep 21 2022 21:21:03 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of undefined (reading 'id')
+ERROR: 2022-09-21T18:25:01.104Z Wed Sep 21 2022 21:25:01 GMT+0300 (East Africa Time)- Error ( undefined): Class constructor OrderItem cannot be invoked without 'new'
+ERROR: 2022-09-21T18:25:42.591Z Wed Sep 21 2022 21:25:42 GMT+0300 (East Africa Time)- Error ( undefined): newOrderItem is not defined
+ERROR: 2022-09-21T18:29:59.693Z Wed Sep 21 2022 21:29:59 GMT+0300 (East Africa Time)- Error ( undefined): newOrder is not defined
+ERROR: 2022-09-21T18:30:21.358Z Wed Sep 21 2022 21:30:21 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of null (reading 'destroy')
+ERROR: 2022-09-21T18:48:46.236Z Wed Sep 21 2022 21:48:46 GMT+0300 (East Africa Time)- Error ( 404): Yikes, Order not found!
+ERROR: 2022-09-21T18:49:48.788Z Wed Sep 21 2022 21:49:48 GMT+0300 (East Africa Time)- Error ( undefined): id is not defined
+ERROR: 2022-09-21T18:55:58.865Z Wed Sep 21 2022 21:55:58 GMT+0300 (East Africa Time)- Error ( undefined): find.foundOrder is not a function
+ERROR: 2022-09-21T18:57:10.398Z Wed Sep 21 2022 21:57:10 GMT+0300 (East Africa Time)- Error ( undefined): WHERE parameter "id" has invalid "undefined" value
+ERROR: 2022-09-21T19:00:21.957Z Wed Sep 21 2022 22:00:21 GMT+0300 (East Africa Time)- Error ( 404): Yikes, Order not found!
+ERROR: 2022-09-21T19:01:58.067Z Wed Sep 21 2022 22:01:58 GMT+0300 (East Africa Time)- Error ( undefined): Invalid value Order {
+  dataValues: {
+    id: '4b87df91-2081-4bc2-ae6e-eb092f22a291',
+    order_date: 2022-09-21T19:00:42.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    created_at: 2022-09-21T19:00:42.000Z,
+    updated_at: 2022-09-21T19:01:54.000Z,
+    items: [
+      Item {
+        dataValues: [Object],
+        _previousDataValues: [Object],
+        _changed: Set(0) {},
+        _options: [Object],
+        isNewRecord: false,
+        order_items: [order_items]
+      },
+      Item {
+        dataValues: [Object],
+        _previousDataValues: [Object],
+        _changed: Set(0) {},
+        _options: [Object],
+        isNewRecord: false,
+        order_items: [order_items]
+      }
+    ]
+  },
+  _previousDataValues: {
+    id: '4b87df91-2081-4bc2-ae6e-eb092f22a291',
+    order_date: 2022-09-21T19:00:42.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    created_at: 2022-09-21T19:00:42.000Z,
+    updated_at: 2022-09-21T19:01:54.000Z,
+    items: [
+      Item {
+        dataValues: [Object],
+        _previousDataValues: [Object],
+        _changed: Set(0) {},
+        _options: [Object],
+        isNewRecord: false,
+        order_items: [order_items]
+      },
+      Item {
+        dataValues: [Object],
+        _previousDataValues: [Object],
+        _changed: Set(0) {},
+        _options: [Object],
+        isNewRecord: false,
+        order_items: [order_items]
+      }
+    ]
+  },
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    include: [
+      {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    ],
+    includeNames: [ 'items' ],
+    includeMap: {
+      items: {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    },
+    includeValidated: true,
+    attributes: [
+      'id',
+      'order_date',
+      'status',
+      'created_by',
+      'updated_by',
+      'created_at',
+      'updated_at'
+    ],
+    raw: true
+  },
+  isNewRecord: false,
+  items: [
+    Item {
+      dataValues: {
+        id: '5b9d9b66-6554-42ce-9cb7-5ebab8d3bcb4',
+        name: '7667item',
+        description: '7667 item created for test purposes.',
+        purchase_date: 2022-09-21T17:07:15.000Z,
+        expiry_date: 2023-10-01T00:00:00.000Z,
+        buying_price: 1500,
+        selling_price: 2500,
+        status: true,
+        created_by: '1d21ef99-601d-4c13-8225-2190af5c43a3',
+        updated_by: null,
+        created_at: 2022-09-21T17:07:15.000Z,
+        updated_at: 2022-09-21T17:07:15.000Z,
+        order_items: [order_items]
+      },
+      _previousDataValues: {
+        id: '5b9d9b66-6554-42ce-9cb7-5ebab8d3bcb4',
+        name: '7667item',
+        description: '7667 item created for test purposes.',
+        purchase_date: 2022-09-21T17:07:15.000Z,
+        expiry_date: 2023-10-01T00:00:00.000Z,
+        buying_price: 1500,
+        selling_price: 2500,
+        status: true,
+        created_by: '1d21ef99-601d-4c13-8225-2190af5c43a3',
+        updated_by: null,
+        created_at: 2022-09-21T17:07:15.000Z,
+        updated_at: 2022-09-21T17:07:15.000Z,
+        order_items: [order_items]
+      },
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        include: [Array],
+        includeNames: [Array],
+        includeMap: [Object],
+        includeValidated: true,
+        raw: true,
+        attributes: undefined
+      },
+      isNewRecord: false,
+      order_items: order_items {
+        dataValues: [Object],
+        _previousDataValues: [Object],
+        _changed: Set(0) {},
+        _options: [Object],
+        isNewRecord: false
+      }
+    },
+    Item {
+      dataValues: {
+        id: '5f5e6b11-5525-4009-9475-31799b649284',
+        name: '9047item',
+        description: '9047 item created for test purposes.',
+        purchase_date: 2022-09-21T17:07:12.000Z,
+        expiry_date: 2023-10-01T00:00:00.000Z,
+        buying_price: 1500,
+        selling_price: 2500,
+        status: true,
+        created_by: '1d21ef99-601d-4c13-8225-2190af5c43a3',
+        updated_by: null,
+        created_at: 2022-09-21T17:07:12.000Z,
+        updated_at: 2022-09-21T17:07:12.000Z,
+        order_items: [order_items]
+      },
+      _previousDataValues: {
+        id: '5f5e6b11-5525-4009-9475-31799b649284',
+        name: '9047item',
+        description: '9047 item created for test purposes.',
+        purchase_date: 2022-09-21T17:07:12.000Z,
+        expiry_date: 2023-10-01T00:00:00.000Z,
+        buying_price: 1500,
+        selling_price: 2500,
+        status: true,
+        created_by: '1d21ef99-601d-4c13-8225-2190af5c43a3',
+        updated_by: null,
+        created_at: 2022-09-21T17:07:12.000Z,
+        updated_at: 2022-09-21T17:07:12.000Z,
+        order_items: [order_items]
+      },
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        include: [Array],
+        includeNames: [Array],
+        includeMap: [Object],
+        includeValidated: true,
+        raw: true,
+        attributes: undefined
+      },
+      isNewRecord: false,
+      order_items: order_items {
+        dataValues: [Object],
+        _previousDataValues: [Object],
+        _changed: Set(0) {},
+        _options: [Object],
+        isNewRecord: false
+      }
+    }
+  ]
+}
+ERROR: 2022-09-21T19:02:02.353Z Wed Sep 21 2022 22:02:02 GMT+0300 (East Africa Time)- Error ( undefined): Invalid value Order {
+  dataValues: {
+    id: 'eee6d6be-af1a-4365-985e-6698b942d94d',
+    order_date: 2022-09-21T19:02:02.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: null,
+    created_at: 2022-09-21T19:02:02.000Z,
+    updated_at: 2022-09-21T19:02:02.000Z,
+    items: []
+  },
+  _previousDataValues: {
+    id: 'eee6d6be-af1a-4365-985e-6698b942d94d',
+    order_date: 2022-09-21T19:02:02.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: null,
+    created_at: 2022-09-21T19:02:02.000Z,
+    updated_at: 2022-09-21T19:02:02.000Z,
+    items: []
+  },
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    include: [
+      {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    ],
+    includeNames: [ 'items' ],
+    includeMap: {
+      items: {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    },
+    includeValidated: true,
+    attributes: [
+      'id',
+      'order_date',
+      'status',
+      'created_by',
+      'updated_by',
+      'created_at',
+      'updated_at'
+    ],
+    raw: true
+  },
+  isNewRecord: false,
+  items: []
+}
+ERROR: 2022-09-21T19:02:06.676Z Wed Sep 21 2022 22:02:06 GMT+0300 (East Africa Time)- Error ( undefined): Invalid value Order {
+  dataValues: {
+    id: 'd035893e-7922-4f6a-b7b2-16057b8e3f00',
+    order_date: 2022-09-21T19:02:06.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: null,
+    created_at: 2022-09-21T19:02:06.000Z,
+    updated_at: 2022-09-21T19:02:06.000Z,
+    items: []
+  },
+  _previousDataValues: {
+    id: 'd035893e-7922-4f6a-b7b2-16057b8e3f00',
+    order_date: 2022-09-21T19:02:06.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: null,
+    created_at: 2022-09-21T19:02:06.000Z,
+    updated_at: 2022-09-21T19:02:06.000Z,
+    items: []
+  },
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    include: [
+      {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    ],
+    includeNames: [ 'items' ],
+    includeMap: {
+      items: {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    },
+    includeValidated: true,
+    attributes: [
+      'id',
+      'order_date',
+      'status',
+      'created_by',
+      'updated_by',
+      'created_at',
+      'updated_at'
+    ],
+    raw: true
+  },
+  isNewRecord: false,
+  items: []
+}
+ERROR: 2022-09-21T19:02:17.431Z Wed Sep 21 2022 22:02:17 GMT+0300 (East Africa Time)- Error ( undefined): Invalid value Order {
+  dataValues: {
+    id: '04bab599-fc4a-471a-a0a2-4acbe8f38ce8',
+    order_date: 2022-09-21T19:02:17.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: null,
+    created_at: 2022-09-21T19:02:17.000Z,
+    updated_at: 2022-09-21T19:02:17.000Z,
+    items: []
+  },
+  _previousDataValues: {
+    id: '04bab599-fc4a-471a-a0a2-4acbe8f38ce8',
+    order_date: 2022-09-21T19:02:17.000Z,
+    status: true,
+    created_by: '78c15f09-ca02-4f3b-8828-36875b1055b9',
+    updated_by: null,
+    created_at: 2022-09-21T19:02:17.000Z,
+    updated_at: 2022-09-21T19:02:17.000Z,
+    items: []
+  },
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    include: [
+      {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    ],
+    includeNames: [ 'items' ],
+    includeMap: {
+      items: {
+        model: Item,
+        as: 'items',
+        through: [Object],
+        parent: [Object],
+        topLimit: undefined,
+        association: items,
+        include: [Array],
+        attributes: [Array],
+        required: false,
+        includeNames: [Array],
+        includeMap: [Object],
+        hasSingleAssociation: true,
+        hasMultiAssociation: false,
+        hasDuplicating: true,
+        hasRequired: false,
+        hasWhere: false,
+        hasIncludeWhere: false,
+        hasIncludeRequired: false,
+        duplicating: true,
+        hasParentWhere: true,
+        hasParentRequired: false,
+        subQuery: false,
+        subQueryFilter: false
+      }
+    },
+    includeValidated: true,
+    attributes: [
+      'id',
+      'order_date',
+      'status',
+      'created_by',
+      'updated_by',
+      'created_at',
+      'updated_at'
+    ],
+    raw: true
+  },
+  isNewRecord: false,
+  items: []
+}
+ERROR: 2022-09-21T19:03:42.343Z Wed Sep 21 2022 22:03:42 GMT+0300 (East Africa Time)- Error ( undefined): Cannot delete or update a parent row: a foreign key constraint fails (`zhildestination`.`order_items`, CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))
+ERROR: 2022-09-21T19:05:48.448Z Wed Sep 21 2022 22:05:48 GMT+0300 (East Africa Time)- Error ( 404): Yikes, Order not found!
+ERROR: 2022-09-21T19:06:03.387Z Wed Sep 21 2022 22:06:03 GMT+0300 (East Africa Time)- Error ( 404): Yikes, Order not found!
+ERROR: 2022-09-21T19:06:05.929Z Wed Sep 21 2022 22:06:05 GMT+0300 (East Africa Time)- Error ( 404): Error: Order not found!
+ERROR: 2022-09-21T19:06:09.277Z Wed Sep 21 2022 22:06:09 GMT+0300 (East Africa Time)- Error ( 404): Yikes, Order not found!
+ERROR: 2022-09-21T19:06:11.453Z Wed Sep 21 2022 22:06:11 GMT+0300 (East Africa Time)- Error ( 404): Error: Order not found!
+ERROR: 2022-09-21T19:06:15.985Z Wed Sep 21 2022 22:06:15 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, Order not Found!.
+ERROR: 2022-09-21T19:17:04.725Z Wed Sep 21 2022 22:17:04 GMT+0300 (East Africa Time)- Error ( undefined): Cannot read properties of null (reading 'selling_price')
+ERROR: 2022-09-21T19:20:14.487Z Wed Sep 21 2022 22:20:14 GMT+0300 (East Africa Time)- Error ( 404): Humpty dumpty, Item not Found!.

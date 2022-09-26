@@ -5,11 +5,11 @@ const winston = require('winston')
 
 var usersRouter = require('./routes/users')
 var levelsRouter = require('./routes/levels')
+var itemsRouter = require('./routes/items')
+var ordersRouter = require('./routes/orders')
 
 const cors = require('cors')
 const { handleError } = require('./helpers/error')
-// winston.add(new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),)
-// winston.add(new winston.transports.File({ filename: 'logs/info.log', level: 'info' }),)
 
 winston.add(
     new winston.transports.File({
@@ -48,6 +48,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors({exposedHeaders: ['x-auth-token']}))
 app.use('/api/v1/users', usersRouter)
 app.use('/api/v1/levels', levelsRouter)
+app.use('/api/v1/items', itemsRouter)
+app.use('/api/v1/orders', ordersRouter)
 app.use((err, req, res, next) => { handleError(err, res) })
 
 module.exports = app

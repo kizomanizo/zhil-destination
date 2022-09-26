@@ -4,20 +4,26 @@
     "password": "",
     "database": "",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "operatorsAliases": 0,
+    "logging": false
   },
   "test": {
     "username": "root",
     "password": null,
     "database": "roadmap_test",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "operatorsAliases": 0,
+    "logging": false
   },
   "production": {
     "username": "root",
     "password": null,
     "database": "roadmap_prod",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "operatorsAliases": 0,
+    "logging": false
   }
 }

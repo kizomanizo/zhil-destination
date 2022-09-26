@@ -3,14 +3,18 @@ const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
     class Item extends Model {
         static associate(models) {
-            Item.belongsToMany(models.Order, {through: 'OrderItems'})
+            Item.belongsToMany(models.Order, {
+                as:'orders',
+                through: 'order_items',
+                foreignKey: 'item_id',
+                otherKey: 'order_id'
+            })
         }
     }
     Item.init({
         id: { primaryKey: true, type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4 },
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
-        batch_number: DataTypes.STRING,
         purchase_date: DataTypes.DATE,
         expiry_date: DataTypes.DATE,
         buying_price: DataTypes.NUMBER,
