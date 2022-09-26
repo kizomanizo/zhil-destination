@@ -1,7 +1,7 @@
-# PharmAste Backend
-## Backend for the Aste's Pharmacy Sales App.
+# ZHIL Destination Backend
+## Backend for the ZHIL Demo testing Destination App.
 
-This will be coupled with a frontend that together make up the pharmacy sales app for Aste. This app is built on Express in NodeJS witout any view as it is supposed to be just a backend API.
+For test use.
 
 ## Installation ##
 
@@ -10,8 +10,8 @@ For development version of this repo, you will have to install mysql server and 
 ### Steps ###
 1. Install NodeJS 
 2. Install MySQL
-3. clone the repo from Github with `git clone https://github.com/kizomanizo/pharmaste-backend.git`
-4. Open the cloned repo with `cd pharmaste-backend`
+3. clone the repo from Github with `git clone https://github.com/kizomanizo/zhil-destination.git`
+4. Open the cloned repo with `cd zhil-destination`
 5. Once inside the repo, install dependencies using `npm install`
 6. Open the repo using your favorite IDE
 7. Edit the `.env` file and add relevant variables such as port, demo users, demo levels, demo password, JWT secret word etc.
